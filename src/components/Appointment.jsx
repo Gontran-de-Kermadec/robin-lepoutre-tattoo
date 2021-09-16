@@ -1,6 +1,6 @@
 const Appointment = () => {
 	return (
-		<div className="section">
+		<div className="section" id="appointment">
 			<p>PRISE DE RDV LUNDI 14H00 / 16H30</p>
 			<p>TATTOO MARDI ET VENDREDI 9H00 / 16H30</p>
 			<p>

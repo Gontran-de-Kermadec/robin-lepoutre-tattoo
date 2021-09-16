@@ -1,0 +1,18 @@
+.gallery__container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.gallery__img--container {
+	width: 9rem;
+	height: 9rem;
+	background-color: lightgray;
+	border: solid;
+}
+@media (min-width: 769px) {
+	.gallery__img--container {
+		width: 15rem;
+		height: 15rem;
+	}
+}

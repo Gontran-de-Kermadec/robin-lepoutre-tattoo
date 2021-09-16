@@ -1,6 +1,6 @@
 const About = () => {
 	return (
-		<div className="about__section section">
+		<div className="about__section section" id="about">
 			<p>
 				Robin Lepoutre, artiste tatoueur d’origine Deshaiesienne Diplômé de
 				l’école supérieure d’art de Saint-Luc à Bruxelles Sa formation et son

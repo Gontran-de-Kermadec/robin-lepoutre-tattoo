@@ -1,0 +1,13 @@
+header {
+	/* position: fixed; */
+	background-color: lightgray;
+}
+@media (min-width: 426px) {
+	header {
+		padding: 2rem 0;
+	}
+	header ul {
+		display: flex;
+		justify-content: space-around;
+	}
+}
