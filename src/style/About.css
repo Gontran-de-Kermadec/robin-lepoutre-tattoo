@@ -1,0 +1,29 @@
+.about .img__container {
+	display: none;
+	/* width: 20rem; */
+	/* height: 25rem;
+	background-color: lightgray; */
+}
+@media (min-width: 768px) {
+	.about {
+		height: 700px;
+		display: flex;
+		justify-content: center;
+	}
+	.about .text__container {
+		align-self: center;
+		padding: 0 1rem;
+		text-align: left;
+	}
+	.about .img__container {
+		display: block;
+	}
+	.about .img__container img {
+		height: 100%;
+		width: 50vw;
+		object-fit: cover;
+	}
+	/* .about .img__container p {
+		width: 50vw;
+	} */
+}
