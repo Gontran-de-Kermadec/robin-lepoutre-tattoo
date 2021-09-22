@@ -26,7 +26,7 @@ const Infos = () => {
 				</div>
 			</div>
 			<div className="care">
-				<p className="care__title">Les soins</p>
+				<h2 className="care__title">Les soins</h2>
 				<div className="care__preposttattoo">
 					<div className="care__pretattoo">
 						<p>
@@ -37,10 +37,8 @@ const Infos = () => {
 								- prenez soin de votre peau (crème hydratante, pas d’exposition
 								au soleil)
 							</li>
-							<li>
-								- pensez à épiler la zone 2 jours avant votre RDV TATTOO. - bien
-								dormir et bien manger
-							</li>
+							<li>- pensez à épiler la zone 2 jours avant votre RDV TATTOO.</li>
+							<li>- bien dormir et bien manger</li>
 							<li>
 								-si vous avez un terrain allergique connu ( latex, pigments etc)
 								faites-le savoir
@@ -81,15 +79,20 @@ const Infos = () => {
 					</div>
 				</div>
 				<div className="care__products">
-					<p>Conseil produits:</p>
+					<p>
+						<em>Conseil produits:</em>
+					</p>
 					<ul>
 						<li>- Savon de marseille</li>
 						<li>- Crème homéoplasmine</li>
 					</ul>
+				</div>
+				<div className="care__retouches">
 					<p>
-						Retouches : La cicatrisation étant un processus aléatoire, des
-						retouches sont parfois nécessaires en finition. Ces retouches sont
-						comprises dans le prix.
+						<em>Retouches:</em>
+						<br /> La cicatrisation étant un processus aléatoire, des retouches
+						sont parfois nécessaires en finition. Ces retouches sont comprises
+						dans le prix.
 					</p>
 				</div>
 			</div>

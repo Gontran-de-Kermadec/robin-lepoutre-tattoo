@@ -1,6 +1,9 @@
 #contact {
 	padding: 2rem 0 3rem 0;
 }
+form .control {
+	margin: 1rem auto;
+}
 form label {
 	display: block;
 }
@@ -8,6 +11,7 @@ form input,
 form textarea {
 	width: 80vw;
 	font-size: 1.1rem;
+	border: solid 1px;
 }
 form input {
 	height: 2rem;
@@ -19,5 +23,5 @@ form #send {
 	width: 60vw;
 	background: lightgray;
 	color: #000;
-	border: none;
+	/* border: solid; */
 }

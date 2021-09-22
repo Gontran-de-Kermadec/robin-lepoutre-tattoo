@@ -1,8 +1,8 @@
+.about {
+	margin: 1rem;
+}
 .about .img__container {
 	display: none;
-	/* width: 20rem; */
-	/* height: 25rem;
-	background-color: lightgray; */
 }
 @media (min-width: 768px) {
 	.about {

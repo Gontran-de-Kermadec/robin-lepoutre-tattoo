@@ -1,7 +1,16 @@
 .App {
 	text-align: center;
 }
-
-/* .section {
-	border: solid 2px;
-} */
+h1 {
+	margin: 2rem auto;
+}
+h2 {
+	font-size: 1.5rem;
+	margin: 2rem auto;
+}
+@media (min-width: 768px) {
+	p,
+	li {
+		font-size: 1.2rem;
+	}
+}

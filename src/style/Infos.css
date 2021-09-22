@@ -1,23 +1,23 @@
 .infos .warning__img {
 	display: none;
-	/* width: 20rem; */
-	/* height: 25rem;
-	background-color: lightgray; */
 }
+
 .care {
-	margin: 1rem;
-}
-.care__title {
-	font-size: 2rem;
-}
-.care__pretattoo,
-.care__posttattoo {
 	margin: 1rem;
 }
 .care em {
 	font-weight: bold;
 }
-
+@media (max-width: 767px) {
+	.infos {
+		margin: 1rem;
+	}
+	.care__pretattoo,
+	.care__posttattoo,
+	.care__products {
+		margin: 2rem auto;
+	}
+}
 @media (min-width: 768px) {
 	.infos .warning {
 		display: flex;
@@ -39,5 +39,9 @@
 	}
 	.infos .care__preposttattoo {
 		display: flex;
+	}
+	.care__pretattoo,
+	.care__posttattoo {
+		margin: 1rem;
 	}
 }

@@ -11,9 +11,6 @@ const Homepage = () => {
 		<div>
 			<Header />
 			<main>
-				{/* <div>
-					<img src={logo} alt="Logo Robin Lepoutre" />
-				</div> */}
 				<h1>Robin Lepoutre Tattoo</h1>
 				<About />
 				<Gallery />

@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
+import "../style/Landing.css";
 const LandingPage = () => {
 	return (
-		<div>
-			<p>Robin Lepoutre</p>
+		<div className="landing">
+			<p>Robin LEPOUTRE</p>
 			<section className="button__container">
 				<button>
 					<a

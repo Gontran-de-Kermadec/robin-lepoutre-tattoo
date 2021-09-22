@@ -10,6 +10,9 @@ header {
 .header__section img {
 	width: 100%;
 }
+header ul li {
+	border-bottom: solid 1px;
+}
 
 @media (min-width: 426px) {
 	header {
@@ -23,5 +26,8 @@ header {
 	header ul {
 		display: flex;
 		justify-content: space-around;
+	}
+	header ul li {
+		border-bottom: initial;
 	}
 }
