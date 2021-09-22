@@ -1,0 +1,23 @@
+#contact {
+	padding: 2rem 0 3rem 0;
+}
+form label {
+	display: block;
+}
+form input,
+form textarea {
+	width: 80vw;
+	font-size: 1.1rem;
+}
+form input {
+	height: 2rem;
+}
+form textarea {
+	height: 4rem;
+}
+form #send {
+	width: 60vw;
+	background: lightgray;
+	color: #000;
+	border: none;
+}
