@@ -2,6 +2,7 @@ import "../style/Steps.css";
 const Steps = () => {
 	return (
 		<div className="section steps">
+			<p>Comment ça marche ?</p>
 			<div className="frise__container">
 				<div className="frise">
 					<div className="frise__arrow">
@@ -42,49 +43,6 @@ const Steps = () => {
 					<div className="frise__text">
 						<p>tattoo</p>
 					</div>
-				</div>
-			</div>
-			<div className="mainline">
-				<div className="vertline__container one">
-					<div className="circle">
-						<p>1</p>
-					</div>
-					<div className="line"></div>
-					<div className="text">
-						<p>Demande RDV</p>
-					</div>
-				</div>
-				<div className="vertline__container two">
-					<div className="circle">
-						<p>2</p>
-					</div>
-					<div className="line"></div>
-					<div className="text">
-						<p>Rencontre + étude</p>
-					</div>
-				</div>
-				<div className="vertline__container three">
-					<div className="circle">
-						<p>3</p>
-					</div>
-					<div className="line"></div>
-					<div className="text">
-						<p>Etude (optionnel)</p>
-					</div>
-				</div>
-				<div className="vertline__container four">
-					<div className="circle">
-						<p>4</p>
-					</div>
-					<div className="line"></div>
-					<div className="text">déssin</div>
-				</div>
-				<div className="vertline__container five">
-					<div className="circle">
-						<p>5</p>
-					</div>
-					<div className="line"></div>
-					<div className="text">tattoo</div>
 				</div>
 			</div>
 			<h2>Étape 1: Avez vous un projet ?</h2>

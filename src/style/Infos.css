@@ -4,6 +4,19 @@
 	/* height: 25rem;
 	background-color: lightgray; */
 }
+.care {
+	margin: 1rem;
+}
+.care__title {
+	font-size: 2rem;
+}
+.care__pretattoo,
+.care__posttattoo {
+	margin: 1rem;
+}
+.care em {
+	font-weight: bold;
+}
 
 @media (min-width: 768px) {
 	.infos .warning {

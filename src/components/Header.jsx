@@ -1,8 +1,10 @@
 import { HashLink as Anchor } from "react-router-hash-link";
 import "../style/Header.css";
+import logo from "../images/logo.jpg";
 const Header = () => {
 	return (
-		<div className="section">
+		<div className="section header__section ">
+			<img src={logo} alt="Logo Robin Lepoutre" />
 			<header>
 				<nav>
 					<ul>
@@ -11,8 +13,17 @@ const Header = () => {
 								À propos
 							</Anchor>
 						</li>
-						<li>Galerie</li>
-						<li>Infos</li>
+						<li>
+							<Anchor smooth to="/robin-lepoutre-tattoo#gallery">
+								Galerie
+							</Anchor>
+						</li>
+
+						<li>
+							<Anchor smooth to="/robin-lepoutre-tattoo#infos">
+								Infos
+							</Anchor>
+						</li>
 						<li>
 							<Anchor smooth to="/robin-lepoutre-tattoo#appointment">
 								Demande de RDV
@@ -21,6 +32,8 @@ const Header = () => {
 					</ul>
 				</nav>
 			</header>
+			{/* <div className="header__logo">
+			</div> */}
 		</div>
 	);
 };

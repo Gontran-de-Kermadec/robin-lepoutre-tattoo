@@ -2,7 +2,7 @@ import "../style/Infos.css";
 import warning from "../images/warning.jpg";
 const Infos = () => {
 	return (
-		<div className="section infos">
+		<div className="section infos" id="infos">
 			<div className="warning">
 				<div className="warning__text">
 					<p>
@@ -26,10 +26,12 @@ const Infos = () => {
 				</div>
 			</div>
 			<div className="care">
-				<p>Les soins</p>
+				<p className="care__title">Les soins</p>
 				<div className="care__preposttattoo">
 					<div className="care__pretattoo">
-						<p>Avant :</p>
+						<p>
+							<em>Avant :</em>
+						</p>
 						<ul>
 							<li>
 								- prenez soin de votre peau (crème hydratante, pas d’exposition
@@ -50,8 +52,10 @@ const Infos = () => {
 							<li> - “venez ZEN, avec moi ça se passe toujours bien !”</li>
 						</ul>
 					</div>
-					<div className="care__posttatto">
-						<p>Après :</p>
+					<div className="care__posttattoo">
+						<p>
+							<em>Après :</em>
+						</p>
 						<ul>
 							<li>
 								- Enlever le pansement moins de 2 heures après le tatouage
