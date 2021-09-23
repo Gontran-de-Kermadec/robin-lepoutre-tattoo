@@ -25,3 +25,17 @@ form #send {
 	color: #000;
 	/* border: solid; */
 }
+.contact__messagesent {
+	padding: 0.5rem;
+	/* border: solid #000; */
+	border-radius: 1rem;
+	width: 80vw;
+	margin: 0.5rem auto;
+	color: white;
+	background: green;
+}
+@media (min-width: 768px) {
+	.contact__messagesent {
+		width: 30vw;
+	}
+}

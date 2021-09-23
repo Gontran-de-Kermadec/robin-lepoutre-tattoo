@@ -2,17 +2,22 @@ import "../style/Gallery.css";
 
 const Gallery = () => {
 	const imgGallery = [
-		"/images/img_gallery0.jpg",
-		"/images/img_gallery1.jpg",
-		"/images/img_gallery2.jpg",
-		"/images/img_gallery3.jpg",
-		"/images/img_gallery4.jpg",
-		"/images/img_gallery5.jpg",
-		"/images/img_gallery6.jpg",
-		"/images/img_gallery7.jpg",
+		"/images/gallery0.jpg",
+		"/images/gallery1.jpg",
+		"/images/gallery2.jpg",
+		"/images/gallery3.jpg",
+		"/images/gallery4.jpg",
+		"/images/gallery5.jpg",
+		"/images/gallery6.jpg",
+		"/images/gallery7.jpg",
+		"/images/gallery8.jpg",
+		"/images/gallery9.jpg",
+		"/images/gallery10.jpg",
+		"/images/gallery11.jpg",
 	];
 	return (
 		<div className="section" id="gallery">
+			<h2>Galerie</h2>
 			<section className="gallery__container">
 				{imgGallery.map((img, i) => {
 					return (

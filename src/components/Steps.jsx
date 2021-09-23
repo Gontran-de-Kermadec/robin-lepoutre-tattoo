@@ -47,66 +47,95 @@ const Steps = () => {
 			</div>
 			<div className="steps__container">
 				<div className="single__step">
-					<h3>Étape 1: Avez vous un projet ?</h3>
+					<h3>Étape 1: La Présentation et description du projet</h3>
 					<ul>
 						<li>
-							- si oui communiquez -le moi par mail avec le plus de détails
-							possible
+							- Si vous avez un projet :
+							<p>
+								Communiquez-le à Robin par email avec le plus de détails
+								possibles (description, style, photo, emplacement, taille, ce
+								que vous aimez, ce que vous n’aimez pas…)
+							</p>
 						</li>
 						<li>
-							- vous n’avez pas de projet clairement défini, pas de soucis. Je
-							peux vous accompagner étape par étape. Indiquez-moi ce que vous
-							recherchez.
+							- Si votre projet n’est pas encore clairement défini :
+							<p>
+								Robin vous accompagnera étape par étape pour vous donner entière
+								satisfaction. Indiquez-lui vos souhaits par email.
+							</p>
+							<p>
+								Privilégiant la qualité de son travail, Robin sélectionnera les
+								projets en adéquation avec ses compétences et ne pourra répondre
+								à toutes les demandes, notamment les projets “cover”.
+							</p>
+							<p>
+								L’e-mail est le seul moyen de prendre contact avec Robin et
+								d’échanger sur vos projets.
+							</p>
 						</li>
 					</ul>
 					<p>
-						Je ne saurais pas répondre à toutes les demandes et notamment les
-						projets “cover”.
+						<q>
+							Mes tatouages sont des créations artistiques sur-mesure et
+							durables. Je cible l’équilibre entre votre personnalité, les
+							courbes de votre corps et ma sensibilité.
+						</q>
 					</p>
 				</div>
 				<div className="single__step">
-					<h3>Étape 2:</h3>
+					<h3>Étape 2: La première Rencontre (15 minutes)</h3>
 					<ul>
 						<li>
-							- prise de rdv (environ 15 min) afin de cerner votre besoin, vos
-							attentes. Mais également que ce projet correspond à mon
-							savoir-faire.
+							- Rencontre gratuite afin d’approfondir vos besoins et attentes
 						</li>
+						<li>- Réalisation du devis</li>
 						<li>
-							- Validation d’un devis ( Une étude approfondie peut être
-							nécessaire avant le dessin, celle ci est facturée)
+							- Après validation de votre projet et acceptation du devis, le
+							paiement de la prochaine étape (étude ou dessin) est exigé.
 						</li>
-						<li>- validation échelonnement paiement</li>
-						<li>- paiement de la prochaine étape (étude / dessin)</li>
+						{/* <li>- paiement de la prochaine étape (étude / dessin)</li> */}
 					</ul>
 				</div>
 				<div className="single__step">
-					<h3>Étape 3: étude approfondie du projet</h3>
+					<h3>Étape 3: L’Étude approfondie du projet (optionnelle)</h3>
+					<p>
+						Pour des réalisations plus complexes, qui nécessitent une recherche
+						approfondie, une étude (séance payante) sera organisée afin de
+						définir les contours avant la réalisation du devis final et du
+						dessin.
+					</p>
 					<ul>
 						<li>
-							- proposition / validation du style, la taille, l’emplacement ...
+							- Proposition &amp; validation du style, de la taille, de
+							l’emplacement de votre futur tatouage...
 						</li>
 						<li>
-							- rencontre intermédiaire et finale en fonction de l’importance du
-							projet afin de valider tous les paramètres avant le dessin.
+							- Rencontre intermédiaire et finale en fonction de l’importance de
+							votre projet afin de valider tous les paramètres avant la
+							réalisation du dessin.
 						</li>
 					</ul>
 				</div>
 				<div className="single__step">
-					<h3>Etape 4: Dessin</h3>
+					<h3>Étape 4: Le Dessin</h3>
 					<ul>
 						<li>
-							- création du projet, sur papier, tablette ou directement sur
-							vous.
+							- Dessin réalisé sur papier, tablette ou directement sur vous
 						</li>
-						<li>- validation du dessin</li>
+						<li>- Validation du dessinin</li>
+						<li>- Acompte demandé pour fixer la séance de tatouage</li>
 					</ul>
 				</div>
 				<div className="single__step">
-					<h3>Etape 5: Tatouage</h3>
-					<p>- ne bouge pas !</p>
+					<h3>Étape 5: Le Tatouage</h3>
+					<p>Ne bougez pas ! Robin réalise son œuvre sur vous !</p>
 				</div>
 			</div>
+			<p>
+				En cas d’annulation du RDV tatouage, les acomptes ne sont pas
+				remboursables si Robin n’a pas été prévenu au moins 72 heures à
+				l’avance.
+			</p>
 		</div>
 	);
 };

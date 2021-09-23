@@ -5,20 +5,27 @@ const About = () => {
 		<div className="about section" id="about">
 			<div className="text__container">
 				<p>
-					Robin Lepoutre, artiste tatoueur d’origine Deshaiesienne. Diplômé de
-					l’école supérieure d’art de Saint-Luc à Bruxelles. Sa formation et son
-					expérience lui permettent de maîtriser les techniques:
-					<br /> Graphique/moderne, ornementale, polynésien.
+					Robin Lepoutre, artiste tatoueur d’origine Deshaiesienne reconnu dans
+					son domaine grâce à son coup de crayon, sa créativité, ses
+					compositions originales et pour la qualité de ses réalisations. Son
+					travail est régulièrement récompensé lors des concours (conventions).
 				</p>
 				<p>
-					Son travail est régulièrement récompensé lors des conventions. Ce
-					tatouage sera le fruit d’une collaboration entre vos souhaits et mon
-					expérience d’artiste.
+					Il est diplômé de l’École Supérieure d’Art de Saint-Luc à Bruxelles en
+					2015. Sa formation et son expérience lui permettent d’acquérir un
+					savoir-faire dans ses compositions artistiques. Ses domaines de
+					prédilection sont : le graphique, la géométrie, l’ornemental et le
+					polynésien. Grâce à son statut d’illustrateur confirmé, Robin est un
+					artiste très polyvalent.
 				</p>
-				<q>
-					Observateur et soucieux de chaque détail, je recherche la meilleure
-					composition. Le tatouage est mon dessein !
-				</q>
+				<p>
+					<q>
+						Observateur et soucieux de chaque détail, je recherche la meilleure
+						composition. Le tatouage est mon dessein ! Je garantis une
+						prestation unique et sur-mesure. Votre tatouage sera le fruit d’une
+						collaboration entre vos souhaits et mon expérience d’artiste.
+					</q>
+				</p>
 			</div>
 			<div className="img__container">
 				{/* <p>Une photo</p> */}

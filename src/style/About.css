@@ -1,12 +1,18 @@
 .about {
+	margin: 1rem auto;
+}
+.about .text__container {
 	margin: 1rem;
+}
+.about .text__container p {
+	margin: 2rem 0;
 }
 .about .img__container {
 	display: none;
 }
 @media (min-width: 768px) {
 	.about {
-		height: 700px;
+		height: 100vh;
 		display: flex;
 		justify-content: center;
 	}
@@ -23,7 +29,4 @@
 		width: 50vw;
 		object-fit: cover;
 	}
-	/* .about .img__container p {
-		width: 50vw;
-	} */
 }

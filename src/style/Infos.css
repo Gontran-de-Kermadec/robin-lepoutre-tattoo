@@ -1,12 +1,24 @@
 .infos .warning__img {
 	display: none;
 }
-
+.warning__text p {
+	margin: 2rem 0;
+}
 .care {
 	margin: 1rem;
 }
 .care em {
 	font-weight: bold;
+}
+.care ul {
+	text-align: justify;
+}
+.care ul li {
+	margin: 0.5rem 0;
+}
+.care__products--danger {
+	color: #a30500;
+	margin: 0.5rem 2rem 2rem 2rem;
 }
 @media (max-width: 767px) {
 	.infos {
@@ -17,17 +29,24 @@
 	.care__products {
 		margin: 2rem auto;
 	}
+	.care__pretattoo,
+	.care__posttattoo {
+		flex-grow: 1;
+	}
 }
 @media (min-width: 768px) {
 	.infos .warning {
 		display: flex;
 		justify-content: center;
-		height: 700px;
+		height: 100vh;
 	}
 	.infos .warning__text {
 		align-self: center;
 		padding: 0 1rem;
 		text-align: left;
+	}
+	.warning__text ul {
+		margin: 1rem 0;
 	}
 	.infos .warning__img {
 		display: block;
@@ -37,11 +56,25 @@
 		width: 50vw;
 		object-fit: cover;
 	}
+	.infos .care__tattoo {
+		height: 100vh;
+	}
 	.infos .care__preposttattoo {
 		display: flex;
+		/* justify-content: center; */
 	}
 	.care__pretattoo,
 	.care__posttattoo {
 		margin: 1rem;
+		width: 50rem;
+	}
+	.care__products {
+		height: 100vh;
+		margin: 5rem 0;
+	}
+}
+@media (min-width: 1024px) {
+	.warning__text ul {
+		font-size: 1.2rem;
 	}
 }

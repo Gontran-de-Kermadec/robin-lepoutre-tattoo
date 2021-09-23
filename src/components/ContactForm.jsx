@@ -1,13 +1,13 @@
 import "../style/ContactForm.css";
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 
 const ContactForm = () => {
 	const form = useRef();
-
+	const [success, setSuccess] = useState(false);
 	const sendEmail = (e) => {
 		e.preventDefault();
-		console.log(form.current);
+		setSuccess(!success);
 		emailjs
 			.sendForm(
 				// "service_ff0nc3o",
@@ -19,12 +19,21 @@ const ContactForm = () => {
 			.then(
 				(result) => {
 					console.log(result.text);
+					setSuccess(!success);
 				},
 				(error) => {
 					console.log(error.text);
 				}
 			);
+		e.target.reset();
 	};
+	useEffect(() => {
+		if (success) {
+			setTimeout(() => {
+				setSuccess(!success);
+			}, 10000);
+		}
+	}, [success]);
 	return (
 		<div className="section" id="contact">
 			<h2>Contactez moi</h2>
@@ -50,6 +59,9 @@ const ContactForm = () => {
 					<input type="submit" id="send" value="Envoyer"></input>
 				</div>
 			</form>
+			{success && (
+				<p className="contact__messagesent">Votre message a bien été envoyé</p>
+			)}
 		</div>
 	);
 };
