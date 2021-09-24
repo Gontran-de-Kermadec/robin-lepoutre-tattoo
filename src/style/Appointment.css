@@ -4,9 +4,21 @@
 	background-size: cover;
 	color: white;
 }
+.appointment__time,
+.appointment__location,
+.appointment__price {
+	height: 100vh;
+	position: relative;
+}
 .appointment--opacity {
 	background-color: rgba(51, 51, 51, 0.6);
 	/* padding: 2rem 0; */
+}
+.appointment__position {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
 }
 .appointment__location iframe {
 	width: 90vw;
@@ -22,7 +34,7 @@
 } */
 @media (min-width: 768px) {
 	#appointment {
-		background-image: url("../images/time.jpg");
+		/* background-image: url("../images/time.jpg"); */
 		font-size: 1.5rem;
 	}
 	.time__details,

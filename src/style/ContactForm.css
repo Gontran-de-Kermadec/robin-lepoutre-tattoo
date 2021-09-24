@@ -1,6 +1,16 @@
 /* #contact {
 	padding: 2rem 0 3rem 0;
 } */
+#contact {
+	height: 100vh;
+	position: relative;
+}
+form {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+}
 form .control {
 	margin: 1rem auto;
 }
