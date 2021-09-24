@@ -1,16 +1,27 @@
-/* .about {
-	margin: 1rem auto;
-} */
-.about .text__container {
-	margin: 1rem;
+.about {
+	height: 100vh;
+	position: relative;
+	/* margin: 1rem auto; */
 }
+/* .about .text__container {
+	margin: 1rem;
+} */
+
 .about .text__container p {
 	margin: 2rem 0;
 }
-.about .img__container {
-	display: none;
+
+@media (max-width: 768px) {
+	.about .text__container {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.about .img__container {
+		display: none;
+	}
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
 	.about {
 		height: 100vh;
 		display: flex;

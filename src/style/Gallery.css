@@ -1,11 +1,18 @@
+#gallery {
+	height: 200vh;
+	position: relative;
+}
 .gallery__container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
 }
 .gallery__img--container {
-	width: 8rem;
-	/* margin: 0.5rem; */
+	width: 9rem;
+	margin: 0.5rem;
 }
 .gallery__img--container img {
 	width: 100%;
@@ -38,11 +45,11 @@
 		margin: 1rem auto;
 	} */
 	.gallery__img--container {
-		width: 23rem;
+		width: 20rem;
 	}
 }
-/* @media (min-width: 1500px) {
+@media (min-width: 1440px) {
 	.gallery__container {
-		margin: 1rem auto;
+		margin: 0 5rem;
 	}
-} */
+}

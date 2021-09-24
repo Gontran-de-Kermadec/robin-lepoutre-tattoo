@@ -1,30 +1,40 @@
 .header__section {
 	position: relative;
+	height: 100vh;
 }
 header {
 	width: 100%;
+	position: absolute;
+	top: 0;
+	/* padding: 1rem 0; */
 }
 .header__section img {
+	height: 100%;
 	width: 100%;
+	object-fit: cover;
+	object-position: 50% 50%;
 }
-header ul li {
+/* header ul li {
 	border-bottom: solid 1px;
+} */
+header nav a {
+	color: #fff;
 }
 
 @media (min-width: 426px) {
-	header {
+	/* header {
 		position: absolute;
 		top: 0;
 		padding: 1rem 0;
-	}
-	header nav a {
+	} */
+	/* header nav a {
 		color: #fff;
-	}
+	} */
 	header ul {
 		display: flex;
 		justify-content: space-around;
 	}
-	header ul li {
+	/* header ul li {
 		border-bottom: initial;
-	}
+	} */
 }

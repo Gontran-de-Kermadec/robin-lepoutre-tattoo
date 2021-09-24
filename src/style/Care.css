@@ -1,6 +1,25 @@
 /* .care {
 	margin: 1rem;
 } */
+.care__pretattoo,
+.care__posttattoo,
+.care__products {
+	height: 100vh;
+	position: relative;
+}
+.pretattoo__text,
+.posttattoo__text,
+.products__text {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+}
+/* .pretattoo__text ul,
+.posttattoo__text ul,
+.products__text ul {
+	text-align: left;
+} */
 .care em {
 	font-weight: bold;
 }
@@ -20,48 +39,37 @@
 .products__dontuse li {
 	list-style: inside;
 }
-@media (max-width: 767px) {
-	/* .infos {
-		margin: 1rem;
-	} */
-	.care__pretattoo,
-	.care__posttattoo,
-	.care__products {
-		margin: 2rem auto;
-	}
-	.care__pretattoo,
-	.care__posttattoo {
-		flex-grow: 1;
-	}
-}
-@media (min-width: 768px) {
-	.care__tattoo {
+/* @media (max-width: 768px) {
+	
+} */
+@media (min-width: 769px) {
+	/* .care__tattoo {
 		height: 100vh;
-	}
-	.care__preposttattoo {
+	} */
+	/* .care__preposttattoo {
 		display: flex;
 	}
 	.care__pretattoo,
 	.care__posttattoo {
 		margin: 1rem;
 		width: 50rem;
-	}
-	.care__products {
+	} */
+	/* .care__products {
 		position: relative;
 		height: 100vh;
-		/* margin: 5rem 0; */
-	}
-	.care__products > p {
+		
+	} */
+	/* .care__products > p {
 		transform: translateY(8rem);
 	}
 	.care__products ul:nth-child(2) {
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
-	}
-	.products__dontuse {
+	} */
+	/* .products__dontuse {
 		columns: 2;
-	}
+	} */
 }
 /* @media (min-width: 1024px) {
 	.warning__text ul {

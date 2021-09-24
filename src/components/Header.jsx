@@ -4,6 +4,8 @@ import logo from "../images/logo.jpg";
 const Header = () => {
 	return (
 		<div className="section header__section ">
+			{/* <div className="header__img">
+			</div> */}
 			<img src={logo} alt="Logo Robin Lepoutre" />
 			<header>
 				<nav>

@@ -1,9 +1,13 @@
+.step__bloc {
+	height: 100vh;
+	position: relative;
+}
 .frise__container {
 	display: none;
 }
-.steps__container {
+/* .steps__container {
 	margin: 1rem;
-}
+} */
 .steps li {
 	margin: 1rem 0;
 }
@@ -19,15 +23,19 @@
 }
 
 @media (min-width: 650px) {
+	.frise__container {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		display: flex;
+		justify-content: center;
+		margin: 3rem auto;
+	}
 	.steps .frise {
 		position: relative;
 		border: solid 1px;
 		align-self: center;
-	}
-	.frise__container {
-		display: flex;
-		justify-content: center;
-		margin: 3rem auto;
 	}
 	.frise {
 		width: 17vw;
@@ -60,22 +68,20 @@
 	}
 }
 
-@media (max-width: 767px) {
-	.steps {
+@media (max-width: 768px) {
+	/* .steps {
 		margin: 1rem;
-	}
+	} */
 	.single__step {
 		margin: 1rem auto;
 	}
 }
-@media (min-width: 768px) {
-	.steps {
-		height: 200vh;
+@media (min-width: 769px) {
+	.step__bloc--flex {
+		display: flex;
 	}
-	.steps__container {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		grid-column-gap: 2em;
+	.step__bloc--flex .single__step {
+		width: 50rem;
 	}
 	.single__step--flex {
 		display: flex;
@@ -87,15 +93,7 @@
 	.single__step--flex li p {
 		margin: 0.5rem 1.5rem;
 	}
-	.single__step:nth-child(1) {
-		grid-column-start: 1;
-		grid-column-end: 3;
-		grid-row-start: 1;
-		grid-row-end: 1;
-		margin: 0 1rem 5rem 1rem;
-	}
 }
-
 @media (min-width: 1300px) {
 	.frise__container {
 		margin: 5rem auto;
