@@ -1,10 +1,7 @@
 .header__section {
 	position: relative;
-	/* height: 100vh; */
 }
 header {
-	/* position: absolute;
-	top: 100%; */
 	width: 100%;
 }
 .header__section img {

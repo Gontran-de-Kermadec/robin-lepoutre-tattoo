@@ -1,5 +1,6 @@
 import About from "./About";
 import Appointment from "./Appointment";
+import Care from "./Care";
 import ContactForm from "./ContactForm";
 import Gallery from "./Gallery";
 import Header from "./Header";
@@ -13,10 +14,17 @@ const Homepage = () => {
 			<main>
 				<h1>Robin Lepoutre Tattoo</h1>
 				<About />
+				<div className="section__separate"></div>
 				<Gallery />
+				<div className="section__separate"></div>
 				<Infos />
+				<div className="section__separate"></div>
+				<Care />
+				<div className="section__separate"></div>
 				<Steps />
+				<div className="section__separate"></div>
 				<Appointment />
+				<div className="section__separate"></div>
 				<ContactForm />
 			</main>
 		</div>

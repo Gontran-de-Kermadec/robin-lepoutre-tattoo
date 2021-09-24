@@ -49,30 +49,32 @@ const Steps = () => {
 				<div className="single__step">
 					<h3>Étape 1: La Présentation et description du projet</h3>
 					<ul>
-						<li>
-							- Si vous avez un projet :
-							<p>
-								Communiquez-le à Robin par email avec le plus de détails
-								possibles (description, style, photo, emplacement, taille, ce
-								que vous aimez, ce que vous n’aimez pas…)
-							</p>
-						</li>
-						<li>
-							- Si votre projet n’est pas encore clairement défini :
-							<p>
-								Robin vous accompagnera étape par étape pour vous donner entière
-								satisfaction. Indiquez-lui vos souhaits par email.
-							</p>
-							<p>
-								Privilégiant la qualité de son travail, Robin sélectionnera les
-								projets en adéquation avec ses compétences et ne pourra répondre
-								à toutes les demandes, notamment les projets “cover”.
-							</p>
-							<p>
-								L’e-mail est le seul moyen de prendre contact avec Robin et
-								d’échanger sur vos projets.
-							</p>
-						</li>
+						<div className="single__step--flex">
+							<li>
+								- Si vous avez un projet :
+								<p>
+									Communiquez-le à Robin par email avec le plus de détails
+									possibles (description, style, photo, emplacement, taille, ce
+									que vous aimez, ce que vous n’aimez pas…)
+								</p>
+							</li>
+							<li>
+								- Si votre projet n’est pas encore clairement défini :
+								<p>
+									Robin vous accompagnera étape par étape pour vous donner
+									entière satisfaction. Indiquez-lui vos souhaits par email.
+								</p>
+								<p>
+									Privilégiant la qualité de son travail, Robin sélectionnera
+									les projets en adéquation avec ses compétences et ne pourra
+									répondre à toutes les demandes, notamment les projets “cover”.
+								</p>
+								<p>
+									L’e-mail est le seul moyen de prendre contact avec Robin et
+									d’échanger sur vos projets.
+								</p>
+							</li>
+						</div>
 					</ul>
 					<p>
 						<q>
@@ -93,7 +95,6 @@ const Steps = () => {
 							- Après validation de votre projet et acceptation du devis, le
 							paiement de la prochaine étape (étude ou dessin) est exigé.
 						</li>
-						{/* <li>- paiement de la prochaine étape (étude / dessin)</li> */}
 					</ul>
 				</div>
 				<div className="single__step">
@@ -131,7 +132,7 @@ const Steps = () => {
 					<p>Ne bougez pas ! Robin réalise son œuvre sur vous !</p>
 				</div>
 			</div>
-			<p>
+			<p className="steps__cancel">
 				En cas d’annulation du RDV tatouage, les acomptes ne sont pas
 				remboursables si Robin n’a pas été prévenu au moins 72 heures à
 				l’avance.
