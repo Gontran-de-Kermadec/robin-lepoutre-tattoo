@@ -17,7 +17,7 @@ const Gallery = () => {
 	];
 	return (
 		<div className="section" id="gallery">
-			<h2>Galerie</h2>
+			{/* <h2>Galerie</h2> */}
 			<section className="gallery__container">
 				{imgGallery.map((img, i) => {
 					return (

@@ -1,8 +1,12 @@
 .infos {
 	height: 100vh;
 	position: relative;
+	background-color: #1e0c08;
+	color: #fff;
 }
-
+.warning__text {
+	background: #31211e;
+}
 .warning__text p {
 	margin: 2rem 0;
 }

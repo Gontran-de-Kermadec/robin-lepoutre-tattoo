@@ -16,7 +16,7 @@ const Homepage = () => {
 				<About />
 				<div className="section__separate"></div>
 				<Gallery />
-				{/* <div className="section__separate"></div> */}
+				<div className="section__separate"></div>
 				<Infos />
 				<div className="section__separate"></div>
 				<Care />

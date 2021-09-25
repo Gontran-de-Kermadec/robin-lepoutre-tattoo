@@ -22,10 +22,15 @@
 	}
 }
 @media (min-width: 769px) {
-	.about {
-		height: 100vh;
+	.about__flex {
+		/* height: 100vh; */
 		display: flex;
-		justify-content: center;
+		/* justify-content: center; */
+	}
+	.about .img__container,
+	.about .text__container {
+		width: 50%;
+		/* margin: 0 2rem; */
 	}
 	.about .text__container {
 		align-self: center;
@@ -34,10 +39,11 @@
 	}
 	.about .img__container {
 		display: block;
+		height: 80vh;
 	}
 	.about .img__container img {
 		height: 100%;
-		width: 50vw;
+		width: 100%;
 		object-fit: cover;
 	}
 }

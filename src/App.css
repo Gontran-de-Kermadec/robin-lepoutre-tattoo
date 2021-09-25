@@ -1,17 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap");
+/* font-family: 'Philosopher', sans-serif; */
 .App {
 	text-align: center;
 }
 h1 {
 	font-size: 3rem;
 	margin: 2rem auto;
+	font-family: "Philosopher", sans-serif;
 }
 h2 {
 	font-size: 2rem;
+	font-family: "Philosopher", sans-serif;
 	/* margin: 2rem auto; */
 }
 p,
 li {
-	font-size: 1.1rem;
+	font-size: 1rem;
+}
+.about__title {
+	font-family: "Philosopher", sans-serif;
+	font-size: 1.5rem;
 }
 
 @media (min-width: 768px) {
@@ -22,18 +30,18 @@ li {
 	}
 }
 @media (min-width: 1024px) {
-	p,
+	/* p,
 	li {
 		font-size: 1.5rem;
-	}
+	} */
 	h2 {
 		font-size: 2.5rem;
 		/* margin: 2rem auto; */
 	}
 }
 @media (min-width: 1200px) {
-	p,
+	/* p,
 	li {
 		font-size: 1.5rem;
-	}
+	} */
 }
