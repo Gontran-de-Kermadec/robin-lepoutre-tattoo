@@ -14,22 +14,17 @@ header {
 	object-fit: cover;
 	object-position: 50% 50%;
 }
-/* header ul li {
-	border-bottom: solid 1px;
-} */
+header nav li {
+	font-family: "Philosopher", sans-serif;
+}
 header nav a {
 	color: #fff;
 }
 
-@media (min-width: 426px) {
-	/* header {
-		position: absolute;
-		top: 0;
+@media (min-width: 425px) {
+	header nav {
 		padding: 1rem 0;
-	} */
-	/* header nav a {
-		color: #fff;
-	} */
+	}
 	header ul {
 		display: flex;
 		justify-content: space-around;

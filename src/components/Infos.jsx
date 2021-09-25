@@ -19,8 +19,11 @@ const Infos = () => {
 						novembre 2015 à Nancy.
 					</p>
 					<ul>
-						Dans le cadre des mesures sanitaires et la lutte contre la COVID, il
-						met en œuvre :<li>- Le respect des gestes barrières</li>
+						<p>
+							Dans le cadre des mesures sanitaires et la lutte contre la COVID,
+							il met en œuvre :
+						</p>
+						<li>- Le respect des gestes barrières</li>
 						<li>
 							- La mise en place d’espaces d’accueil et de tatouage distincts
 						</li>

@@ -19,6 +19,12 @@
 .products__text ul {
 	text-align: left;
 } */
+.care__title {
+	margin-bottom: 2rem;
+	padding: 2rem 0;
+	background-color: #1e0c08;
+	color: #fff;
+}
 .care em {
 	font-weight: bold;
 }
@@ -41,7 +47,7 @@
 /* @media (max-width: 768px) {
 	
 } */
-@media (min-width: 769px) {
+@media (min-width: 768px) {
 	/* .care__tattoo {
 		height: 100vh;
 	} */
@@ -108,12 +114,12 @@
 		font-size: 1.3rem;
 		font-family: "Philosopher", sans-serif;
 	}
-	.care__title {
+	/* .care__title {
 		margin-bottom: 2rem;
 		padding: 2rem 0;
 		background-color: #1e0c08;
 		color: #fff;
-	}
+	} */
 	.care .products__dontuse li {
 		margin: 0 1rem;
 	}
