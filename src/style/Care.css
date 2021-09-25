@@ -1,20 +1,19 @@
-/* .care {
-	margin: 1rem;
-} */
-.care__pretattoo,
-.care__posttattoo,
-.care__products {
-	height: 100vh;
+.care {
 	position: relative;
 }
-.pretattoo__text,
+/* .care__pretattoo,
+.care__posttattoo,
+.care__products {
+	position: relative;
+} */
+/* .pretattoo__text,
 .posttattoo__text,
 .products__text {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
 	width: 100%;
-}
+} */
 /* .pretattoo__text ul,
 .posttattoo__text ul,
 .products__text ul {
@@ -31,13 +30,13 @@
 }
 .care__products--danger {
 	color: #a30500;
-	margin: 0.5rem 2rem 2rem 2rem;
-}
-.products__dontuse {
 	margin: 0 2rem;
 }
+/* .products__dontuse {
+	margin: 0 2rem;
+} */
 .products__dontuse li {
-	list-style: inside;
+	margin: 0 1rem;
 }
 /* @media (max-width: 768px) {
 	
@@ -71,8 +70,55 @@
 		columns: 2;
 	} */
 }
-/* @media (min-width: 1024px) {
-	.warning__text ul {
-		font-size: 1.2rem;
+@media (min-width: 1024px) {
+	.care {
+		padding-bottom: 8rem;
 	}
-} */
+	.care__global {
+		display: flex;
+	}
+	.care__pretattoo,
+	.care__posttattoo {
+		width: 50%;
+	}
+	.care__products {
+		width: 40vw;
+		position: absolute;
+		bottom: 0;
+		border-radius: 1rem;
+		background: #7b6766;
+		z-index: 100;
+		color: #fff;
+		padding: 1rem 2rem;
+	}
+	.care .products__text {
+		position: relative;
+	}
+	.care .products__text p,
+	.care .products__text li {
+		font-size: 0.8rem;
+	}
+	.care .products__text li {
+		margin: 0;
+	}
+	.care .products__text h3 {
+		position: absolute;
+		right: 3rem;
+		bottom: 0;
+		font-size: 1.3rem;
+		font-family: "Philosopher", sans-serif;
+	}
+	.care__title {
+		margin-bottom: 2rem;
+		padding: 2rem 0;
+		background-color: #1e0c08;
+		color: #fff;
+	}
+	.care .products__dontuse li {
+		margin: 0 1rem;
+	}
+	.care__products--danger {
+		color: #fff;
+		text-decoration: underline #a30500;
+	}
+}

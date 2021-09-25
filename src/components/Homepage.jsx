@@ -18,9 +18,9 @@ const Homepage = () => {
 				<Gallery />
 				<div className="section__separate"></div>
 				<Infos />
-				<div className="section__separate"></div>
-				<Care />
 				{/* <div className="section__separate"></div> */}
+				<Care />
+				<div className="section__separate"></div>
 				<Steps />
 				{/* <div className="section__separate"></div> */}
 				<Appointment />

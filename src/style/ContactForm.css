@@ -6,31 +6,37 @@
 	position: relative;
 }
 form {
-	position: absolute;
+	/* position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
+	width: 100%; */
+}
+input,
+textarea {
 	width: 100%;
+	border-radius: 0.2rem;
+	font-size: 1.1rem;
+	border: solid 1px;
+	padding: 5px;
+}
+input::placeholder,
+textarea::placeholder {
+	font-family: Georgia, "Times New Roman", Times, serif;
 }
 form .control {
-	margin: 1rem auto;
+	margin: 0.7rem 0;
 }
 form label {
 	display: block;
 }
-form input,
-form textarea {
-	width: 80vw;
-	font-size: 1.1rem;
-	border: solid 1px;
-}
 form input {
-	height: 2rem;
+	height: 2.5rem;
 }
 form textarea {
-	height: 4rem;
+	height: 6.9rem;
 }
 form #send {
-	width: 60vw;
+	/* width: 60vw; */
 	background: lightgray;
 	color: #000;
 	/* border: solid; */
@@ -47,5 +53,33 @@ form #send {
 @media (min-width: 768px) {
 	.contact__messagesent {
 		width: 30vw;
+	}
+}
+@media (min-width: 1024px) {
+	.contact__flex {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: center;
+		position: absolute;
+		width: 100%;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	form,
+	.contact__location {
+		width: 40%;
+	}
+	.form__fullname {
+		display: flex;
+		justify-content: space-between;
+	}
+	.form__fullname .control {
+		width: 49%;
+		margin: initial;
+	}
+	.contact__location iframe {
+		width: 100%;
+		height: 20rem;
+		border: none;
 	}
 }

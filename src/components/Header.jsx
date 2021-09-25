@@ -4,38 +4,34 @@ import logo from "../images/logo.jpg";
 const Header = () => {
 	return (
 		<div className="section header__section ">
-			{/* <div className="header__img">
-			</div> */}
 			<img src={logo} alt="Logo Robin Lepoutre" />
 			<header>
 				<nav>
 					<ul>
 						<li>
 							<Anchor smooth to="/robin-lepoutre-tattoo#about">
-								À propos
+								À PROPOS
 							</Anchor>
 						</li>
 						<li>
 							<Anchor smooth to="/robin-lepoutre-tattoo#gallery">
-								Galerie
+								GALERIE
 							</Anchor>
 						</li>
 
 						<li>
 							<Anchor smooth to="/robin-lepoutre-tattoo#infos">
-								Infos
+								INFOS
 							</Anchor>
 						</li>
 						<li>
 							<Anchor smooth to="/robin-lepoutre-tattoo#appointment">
-								Demande de RDV
+								DEMANDE DE RDV
 							</Anchor>
 						</li>
 					</ul>
 				</nav>
 			</header>
-			{/* <div className="header__logo">
-			</div> */}
 		</div>
 	);
 };
