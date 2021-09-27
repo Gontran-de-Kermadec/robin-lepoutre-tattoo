@@ -1,6 +1,25 @@
 .care {
 	position: relative;
 }
+.care__global {
+	margin: 0 2rem;
+}
+.care__products {
+	margin: 2rem 0;
+	border-radius: 1rem;
+	background: #7b6766;
+	color: #fff;
+	padding: 1rem;
+}
+.care .products__dontuse p {
+	text-align: left;
+}
+.care .products__dontuse ul {
+	columns: 2;
+}
+.care .products__dontuse li {
+	margin: 0;
+}
 /* .care__pretattoo,
 .care__posttattoo,
 .care__products {
@@ -36,7 +55,7 @@
 }
 .care__products--danger {
 	color: #a30500;
-	margin: 0 2rem;
+	margin: 0 0.5rem;
 }
 /* .products__dontuse {
 	margin: 0 2rem;
@@ -47,6 +66,11 @@
 /* @media (max-width: 768px) {
 	
 } */
+@media (min-width: 425px) {
+	.care__products {
+		margin: 2rem;
+	}
+}
 @media (min-width: 768px) {
 	/* .care__tattoo {
 		height: 100vh;
@@ -78,24 +102,32 @@
 }
 @media (min-width: 1024px) {
 	.care {
-		padding-bottom: 8rem;
+		padding-bottom: 5rem;
 	}
 	.care__global {
 		display: flex;
+		margin: 0 4rem;
 	}
 	.care__pretattoo,
 	.care__posttattoo {
 		width: 50%;
 	}
+	.care__pretattoo {
+		padding-right: 2rem;
+	}
+	.care__posttattoo {
+		padding-left: 2rem;
+	}
 	.care__products {
 		width: 40vw;
 		position: absolute;
 		bottom: 0;
+		left: 2rem;
 		border-radius: 1rem;
 		background: #7b6766;
 		z-index: 100;
 		color: #fff;
-		padding: 1rem 2rem;
+		padding: 0.5rem 1rem;
 	}
 	.care .products__text {
 		position: relative;
@@ -108,11 +140,12 @@
 		margin: 0;
 	}
 	.care .products__text h3 {
-		position: absolute;
+		margin-bottom: 0.5rem;
+		/* position: absolute;
 		right: 3rem;
 		bottom: 0;
 		font-size: 1.3rem;
-		font-family: "Philosopher", sans-serif;
+		font-family: "Philosopher", sans-serif; */
 	}
 	/* .care__title {
 		margin-bottom: 2rem;
@@ -120,11 +153,24 @@
 		background-color: #1e0c08;
 		color: #fff;
 	} */
+	.care .products__dontuse {
+		margin-top: 0.5rem;
+	}
 	.care .products__dontuse li {
 		margin: 0 1rem;
 	}
-	.care__products--danger {
+	/* .care__products--danger {
 		color: #fff;
 		text-decoration: underline #a30500;
+	} */
+}
+@media (min-width: 1200px) {
+	.care__products {
+		padding: 1rem 2rem;
+	}
+}
+@media (min-width: 1440px) {
+	.care {
+		padding-bottom: 8rem;
 	}
 }

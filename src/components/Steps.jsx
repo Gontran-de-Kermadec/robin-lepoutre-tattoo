@@ -3,7 +3,7 @@ const Steps = () => {
 	return (
 		<div className="section steps">
 			<div className="step__bloc" id="step__bloc--smallscreen">
-				<h2>Comment ça marche ?</h2>
+				<h2>COMMENT ÇA MARCHE ?</h2>
 				<div className="frise__container">
 					<div className="frise">
 						<div className="frise__arrow">

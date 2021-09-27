@@ -4,6 +4,12 @@
 #contact {
 	height: 100vh;
 	position: relative;
+	margin: 0 2rem;
+}
+.contact__location iframe {
+	height: 20rem;
+	width: 100%;
+	border: none;
 }
 input,
 textarea {
@@ -44,9 +50,17 @@ form #send {
 	color: white;
 	background: green;
 }
+@media (min-width: 425px) {
+	.contact__location p {
+		display: none;
+	}
+}
 @media (min-width: 768px) {
 	.contact__messagesent {
 		width: 30vw;
+	}
+	.contact__flex {
+		margin: 0 5rem;
 	}
 }
 @media (min-width: 1024px) {
@@ -58,6 +72,7 @@ form #send {
 		width: 100%;
 		top: 50%;
 		transform: translateY(-50%);
+		margin: 0;
 	}
 	form,
 	.contact__location {
@@ -71,11 +86,11 @@ form #send {
 		width: 49%;
 		margin: initial;
 	}
-	.contact__location iframe {
+	/* .contact__location iframe {
 		width: 100%;
 		height: 20rem;
 		border: none;
-	}
+	} */
 	.contact__location {
 		margin-left: 1rem;
 	}

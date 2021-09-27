@@ -78,7 +78,9 @@ const Care = () => {
 						<ul>
 							<li>- Le savon de Marseille</li>
 							<li>
-								- Une crème : homéoplasmine, cicatryl, cicaplast ou bépanthen
+								<p>
+									- Une crème : homéoplasmine, cicatryl, cicaplast ou bépanthen
+								</p>
 								<p className="care__products--danger">
 									Attention ! Afin de prévenir les risques d’allergie, testez le
 									produit avant l’application sur votre tatouage.
@@ -98,17 +100,19 @@ const Care = () => {
 								</ul>
 							</li> */}
 						</ul>
-						<ul className="products__dontuse">
+						<div className="products__dontuse">
 							<p>N'utilisez pas :</p>
-							<li>de vaseline</li>
-							<li>de lotion pour bébé</li>
-							<li>de produits à base d'alcool</li>
-							<li>de peroxide</li>
-							<li>d'huile minérale</li>
-							<li>d'aloe</li>
-							<li>de noxzema</li>
-							<li>de remèdes naturels</li>
-						</ul>
+							<ul>
+								<li>de vaseline</li>
+								<li>de lotion pour bébé</li>
+								<li>de produits à base d'alcool</li>
+								<li>de peroxide</li>
+								<li>d'huile minérale</li>
+								<li>d'aloe</li>
+								<li>de noxzema</li>
+								<li>de remèdes naturels</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</section>

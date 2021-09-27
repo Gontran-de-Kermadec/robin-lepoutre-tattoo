@@ -36,15 +36,15 @@ const ContactForm = () => {
 	}, [success]);
 	return (
 		<div className="section" id="contact">
-			<h2>Contactez moi</h2>
+			<h2>CONTACT</h2>
 			<div className="contact__flex">
 				<div className="contact__location">
 					<div className="contact__position">
-						{/* <p>2 rue Thomas Edison</p>
+						<p>2 rue Thomas Edison</p>
 						<p>
 							97122 Baie Mahault (ZI JARRY – face à la nouvelle concession Jeep,
 							à l’étage de Renée Boulangerie)
-						</p> */}
+						</p>
 						<div>
 							<iframe
 								title="Adresse salon"

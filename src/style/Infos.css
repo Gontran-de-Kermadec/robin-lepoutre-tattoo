@@ -7,8 +7,9 @@
 .warning__text {
 	background: #31211e;
 }
-.warning__text p {
-	margin: 2rem 0;
+.warning__text p,
+.warning__text ul {
+	margin: 2rem;
 }
 @media (max-width: 767px) {
 	.infos .warning__text {

@@ -22,7 +22,7 @@ const Homepage = () => {
 				<Care />
 				<div className="section__separate"></div>
 				<Steps />
-				{/* <div className="section__separate"></div> */}
+				<div className="section__separate"></div>
 				<Appointment />
 				{/* <div className="section__separate"></div> */}
 				<ContactForm />

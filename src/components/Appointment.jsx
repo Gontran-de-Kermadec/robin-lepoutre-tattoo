@@ -4,8 +4,8 @@ const Appointment = () => {
 	return (
 		<div className="section" id="appointment">
 			<div className="appointment--opacity">
+				<h2>COMMENT OBTENIR UN RENDEZ VOUS ?</h2>
 				<div className="appointment__time">
-					<h2>COMMENT OBTENIR UN RENDEZ VOUS ?</h2>
 					<div className="appointment__position">
 						<p>
 							<i>
@@ -24,7 +24,7 @@ const Appointment = () => {
 						</div>
 					</div>
 				</div>
-				<div className="appointment__location">
+				{/* <div className="appointment__location">
 					<div className="appointment__position">
 						<p>2 rue Thomas Edison</p>
 						<p>
@@ -40,7 +40,7 @@ const Appointment = () => {
 							></iframe>
 						</div>
 					</div>
-				</div>
+				</div> */}
 				<div className="appointment__price">
 					<div className="appointment__position">
 						<p>
