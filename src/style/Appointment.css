@@ -1,8 +1,22 @@
 #appointment {
 	/* margin: 1rem auto; */
-	background-image: url("../images/time_vertical.jpg");
-	background-size: cover;
+	/* background-image: url("../images/time_vertical.jpg");
+	background-size: cover; */
 	color: white;
+	position: relative;
+	/* max-height: 100vh; */
+}
+.appointment--background {
+	position: absolute;
+	z-index: -10;
+	height: 100%;
+	width: 100%;
+}
+.appointment--background img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: 50% 35%;
 }
 #appointment p {
 	margin: 0.5rem 0;
@@ -15,24 +29,22 @@
 	margin: 2rem;
 }
 .appointment--opacity {
-	background-color: rgba(51, 51, 51, 0.6);
-	/* padding: 2rem 0; */
+	/* background-color: rgba(51, 51, 51, 0.8); */
+	background-color: rgba(4, 3, 3, 0.6);
+	padding: 2rem 0;
 }
-/* .appointment__position {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	width: 100%;
-} */
+#appointment .time__details p {
+	margin: 1rem 0;
+	line-height: 2rem;
+}
 .appointment__location iframe {
 	width: 90vw;
 	height: 300px;
 }
-/* .appointment__time,
-.appointment__price,
-.price__details {
+
+#appointment .price__details {
 	margin: 2rem auto;
-} */
+}
 /* .appointment__price p {
 	margin: 1rem 2rem;
 } */

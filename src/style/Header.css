@@ -6,7 +6,8 @@ header {
 	width: 100%;
 	position: absolute;
 	top: 0;
-	/* padding: 1rem 0; */
+	background-color: rgba(4, 3, 3, 0.8);
+	padding: 1rem 0;
 }
 .header__section img {
 	height: 100%;

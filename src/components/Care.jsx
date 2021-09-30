@@ -3,7 +3,7 @@ const Care = () => {
 	return (
 		<div>
 			<section className="care">
-				<h2 className="care__title">LES SOINS À APPORTER</h2>
+				<p className="care__title h2--title">LES SOINS À APPORTER</p>
 				<div className="care__global">
 					<div className="care__pretattoo">
 						<div className="pretattoo__text">

@@ -12,7 +12,8 @@ const Homepage = () => {
 		<div>
 			<Header />
 			<main>
-				<h1>Robin Lepoutre Tattoo</h1>
+				{/* <h1>Robin Lepoutre Tattoo</h1> */}
+				<div className="section__separate"></div>
 				<About />
 				<div className="section__separate"></div>
 				<Gallery />
@@ -24,7 +25,7 @@ const Homepage = () => {
 				<Steps />
 				<div className="section__separate"></div>
 				<Appointment />
-				{/* <div className="section__separate"></div> */}
+				<div className="section__separate"></div>
 				<ContactForm />
 			</main>
 		</div>

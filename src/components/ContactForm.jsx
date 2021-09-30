@@ -36,7 +36,7 @@ const ContactForm = () => {
 	}, [success]);
 	return (
 		<div className="section" id="contact">
-			<h2>CONTACT</h2>
+			<p className="h2--title">CONTACT</p>
 			<div className="contact__flex">
 				<div className="contact__location">
 					<div className="contact__position">
@@ -55,11 +55,9 @@ const ContactForm = () => {
 						</div>
 					</div>
 				</div>
-				{/* <div className="form__container"> */}
 				<form ref={form} onSubmit={sendEmail}>
 					<div className="form__fullname">
 						<div className="control">
-							{/* <label htmlFor="name">Nom</label> */}
 							<input
 								id="name"
 								type="text"
@@ -69,7 +67,6 @@ const ContactForm = () => {
 							/>
 						</div>
 						<div className="control">
-							{/* <label htmlFor="firstname">Prénom</label> */}
 							<input
 								id="firstname"
 								type="text"
@@ -80,7 +77,6 @@ const ContactForm = () => {
 						</div>
 					</div>
 					<div className="control">
-						{/* <label htmlFor="email">Email </label> */}
 						<input
 							id="email"
 							type="email"
@@ -90,21 +86,19 @@ const ContactForm = () => {
 						></input>
 					</div>
 					<div className="control">
-						{/* <label htmlFor="subject">Sujet</label> */}
 						<input
 							id="subject"
 							type="text"
 							name="user_subject"
+							placeholder="Titre de votre projet"
 							required
-							placeholder="Sujet"
 						></input>
 					</div>
 					<div className="control">
-						{/* <label htmlFor="message">Message </label> */}
 						<textarea
 							id="message"
 							name="user_message"
-							placeholder="Message"
+							placeholder="Description"
 							required
 						/>
 					</div>
@@ -113,7 +107,6 @@ const ContactForm = () => {
 						<input type="submit" id="send" value="ENVOYER"></input>
 					</div>
 				</form>
-				{/* </div> */}
 			</div>
 			{success && (
 				<p className="contact__messagesent">Votre message a bien été envoyé</p>

@@ -13,6 +13,10 @@ h2 {
 	font-size: 1.5rem;
 	font-family: "Philosopher", sans-serif;
 }
+.h2--title {
+	font-size: 1.5rem;
+	font-family: "Philosopher", sans-serif;
+}
 p,
 li {
 	font-size: 0.9rem;
@@ -27,9 +31,12 @@ li {
 		height: 5rem;
 		background-color: transparent;
 	}
-	h2 {
-		margin-bottom: 2rem;
+	.h2--title {
+		font-size: 2rem;
 	}
+	/* h2 {
+		margin-bottom: 2rem;
+	} */
 }
 
 @media (min-width: 1024px) {
