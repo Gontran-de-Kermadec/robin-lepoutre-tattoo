@@ -7,7 +7,8 @@ function App() {
 	return (
 		<div className="App">
 			<Router>
-				<Route path="/robin-lepoutre-tattoo" exact component={Homepage} />
+				{/* <Route path="/robin-lepoutre-tattoo" exact component={Homepage} /> */}
+				<Route path="/home" exact component={Homepage} />
 				<Route path="/" exact component={LandingPage} />
 			</Router>
 		</div>

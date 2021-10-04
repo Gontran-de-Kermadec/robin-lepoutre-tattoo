@@ -7,15 +7,16 @@ const LandingPage = () => {
 			<section className="button__container">
 				<button>
 					<a
-						href="https://titono-art.web.app/"
-						target="_blank"
-						rel="noreferrer"
+						// href="https://titono-art.web.app/"
+						href="#"
+						// target="_blank"
+						// rel="noreferrer"
 					>
 						ART
 					</a>
 				</button>
 				<button>
-					<Link to="/robin-lepoutre-tattoo">TATTOO</Link>
+					<Link to="/home">TATTOO</Link>
 				</button>
 			</section>
 		</div>

@@ -9,23 +9,23 @@ const Header = () => {
 				<nav>
 					<ul>
 						<li>
-							<Anchor smooth to="/robin-lepoutre-tattoo#about">
+							<Anchor smooth to="/home#about">
 								À PROPOS
 							</Anchor>
 						</li>
 						<li>
-							<Anchor smooth to="/robin-lepoutre-tattoo#gallery">
+							<Anchor smooth to="/home#gallery">
 								GALERIE
 							</Anchor>
 						</li>
 
 						<li>
-							<Anchor smooth to="/robin-lepoutre-tattoo#infos">
+							<Anchor smooth to="/home#infos">
 								INFOS
 							</Anchor>
 						</li>
 						<li>
-							<Anchor smooth to="/robin-lepoutre-tattoo#appointment">
+							<Anchor smooth to="/home#appointment">
 								DEMANDE DE RDV
 							</Anchor>
 						</li>

@@ -12,7 +12,6 @@ const Homepage = () => {
 		<div>
 			<Header />
 			<main>
-				{/* <h1>Robin Lepoutre Tattoo</h1> */}
 				<div className="section__separate"></div>
 				<About />
 				<div className="section__separate"></div>
