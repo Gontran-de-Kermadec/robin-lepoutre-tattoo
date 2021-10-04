@@ -99,8 +99,16 @@
 
 @media (max-width: 767px) {
 	.steps .frise {
-		border-bottom: transparent;
+		border-left: solid 1px;
+		border-right: solid 1px;
 	}
+	.steps .frise:nth-child(1) {
+		border-top: solid 1px;
+	}
+	.steps .frise:nth-last-child(-n + 1) {
+		border-bottom: solid 1px;
+	}
+
 	.frise__arrow {
 		position: absolute;
 		height: 0;
