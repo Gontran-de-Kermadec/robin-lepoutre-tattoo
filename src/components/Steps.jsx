@@ -26,7 +26,7 @@ const Steps = () => {
 							<div className="arrow__inner frise__arrow"></div>
 						</div>
 						<div className="frise__text">
-							<p>ÉTUDE (OPTIONNEL)</p>
+							<p>ÉTUDE (OPTIONNELLE)</p>
 						</div>
 					</div>
 					<div className="frise">
@@ -34,7 +34,7 @@ const Steps = () => {
 							<div className="arrow__inner frise__arrow"></div>
 						</div>
 						<div className="frise__text">
-							<p>DÉSSIN</p>
+							<p>DESSIN</p>
 						</div>
 					</div>
 					<div className="frise">
@@ -59,7 +59,7 @@ const Steps = () => {
 							<br />
 							Robin vous accompagne étape par étape.
 							<br />
-							Indiquez ce que vous recherhcez par mail.
+							Indiquez ce que vous recherchez par mail.
 						</p>
 						{/* <ul>
 						<li>
@@ -225,7 +225,7 @@ const Steps = () => {
 							<li>
 								- Dessin réalisé sur papier, tablette ou directement sur vous
 							</li>
-							<li>- Validation du dessinin</li>
+							<li>- Validation du dessin</li>
 							<li>- Acompte demandé pour fixer la séance de tatouage</li>
 						</ul>
 					</div>
@@ -236,8 +236,8 @@ const Steps = () => {
 				</div>
 
 				<p className="steps__cancel">
-					En cas d’annulation du RDV tatouage, les acomptes ne sont pas
-					remboursables si Robin n’a pas été prévenu au moins 72 heures à
+					En cas d’annulation du RDV tatouage, l'accompte versé n'est pas
+					remboursable si Robin n’a pas été prévenu au moins 72 heures à
 					l’avance.
 				</p>
 			</div>

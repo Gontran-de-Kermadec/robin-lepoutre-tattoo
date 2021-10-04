@@ -18,8 +18,8 @@ const Care = () => {
 								<li>- Epilez la zone 2 jours avant votre RDV TATTOO</li>
 								<li>- Dormez et mangez suffisamment</li>
 								<li>
-									- Si vous avez un terrain allergique connu (ex. : au latex,
-									aux pigments etc.) faites-le savoir impérativement
+									- Si vous avez un terrain allergique connu (ex : au latex, aux
+									pigments etc.) faites-le savoir impérativement
 								</li>
 								<li>
 									- Prévoyez un vêtement confortable et pratique qui ne
@@ -73,7 +73,7 @@ const Care = () => {
 				<div className="care__products">
 					<div className="products__text">
 						<h3>
-							<em>Conseil produits</em>
+							<em>Produits conseillés</em>
 						</h3>
 						<ul>
 							<li>- Le savon de Marseille</li>

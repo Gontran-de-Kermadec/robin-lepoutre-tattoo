@@ -3,35 +3,69 @@ import React, { useRef, useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 
 const ContactForm = () => {
+	const reg = /[@#$%^&*):(<>+=`_]+/gi;
 	const form = useRef();
 	const [success, setSuccess] = useState(false);
+	const [fail, setFail] = useState(false);
+	const [isInvalid, setIsInvalid] = useState(false);
+
+	// let error = {};
+	// let wrong = [];
+	const handleInput = (e) => {
+		const value = reg.test(e.currentTarget.value);
+		if (value) {
+			console.log(e.currentTarget.value);
+			//error.push(e.currentTarget);
+			// error[e.currentTarget.name] = e.currentTarget;
+			// wrong.push(e.currentTarget);
+			setIsInvalid(true);
+		} else {
+			//	error = 0;
+			//console.log(error);
+			setIsInvalid(false);
+		}
+	};
+	// const checkErrors = (errors) => {
+	// 	console.log(errors);
+	// 	console.log(reg.test(errors[0].value));
+	// 	if (reg.test(errors[0].value) === false) {
+	// 		console.log("je retite cet erreur");
+	// 	}
+	// };
 	const sendEmail = (e) => {
 		e.preventDefault();
-		setSuccess(!success);
-		emailjs
-			.sendForm(
-				// "service_ff0nc3o",
-				"service_y8i6wok",
-				"template_emnd0iq",
-				form.current,
-				"user_Ucen0nIkMHGKzdR7E0veU"
-			)
-			.then(
-				(result) => {
-					console.log(result.text);
-					setSuccess(!success);
-				},
-				(error) => {
-					console.log(error.text);
-				}
-			);
-		e.target.reset();
+		//checkErrors(error);
+		if (!isInvalid) {
+			emailjs
+				.sendForm(
+					// "service_ff0nc3o",
+					"service_y8i6wok",
+					"template_emnd0iq",
+					form.current,
+					"user_Ucen0nIkMHGKzdR7E0veU"
+				)
+				.then(
+					(result) => {
+						console.log(result.text);
+						setSuccess(!success);
+					},
+					(error) => {
+						console.log(error.text);
+						setFail(true);
+					}
+				);
+			e.target.reset();
+			//setSuccess(!success);
+		}
+		// else {
+		// 	setFail(true);
+		// }
 	};
 	useEffect(() => {
 		if (success) {
 			setTimeout(() => {
 				setSuccess(!success);
-			}, 10000);
+			}, 15000);
 		}
 	}, [success]);
 	return (
@@ -64,6 +98,8 @@ const ContactForm = () => {
 								name="user_name"
 								placeholder="Nom"
 								required
+								//onChange={handleInput}
+								onChange={handleInput}
 							/>
 						</div>
 						<div className="control">
@@ -73,6 +109,8 @@ const ContactForm = () => {
 								name="user_firstname"
 								placeholder="Prénom"
 								required
+								//onChange={handleInput}
+								onChange={handleInput}
 							/>
 						</div>
 					</div>
@@ -83,7 +121,7 @@ const ContactForm = () => {
 							name="user_email"
 							placeholder="Email"
 							required
-						></input>
+						/>
 					</div>
 					<div className="control">
 						<input
@@ -92,7 +130,8 @@ const ContactForm = () => {
 							name="user_subject"
 							placeholder="Titre de votre projet"
 							required
-						></input>
+							onChange={handleInput}
+						/>
 					</div>
 					<div className="control">
 						<textarea
@@ -104,12 +143,27 @@ const ContactForm = () => {
 					</div>
 					<div className="control">
 						<label htmlFor="send"></label>
-						<input type="submit" id="send" value="ENVOYER"></input>
+						<input type="submit" id="send" value="ENVOYER" />
 					</div>
+					{isInvalid && (
+						<p className="contact__invalid">
+							Pas de caractères spéciaux comme (@,{"<"}, =, %...) !!
+						</p>
+					)}
 				</form>
 			</div>
 			{success && (
 				<p className="contact__messagesent">Votre message a bien été envoyé</p>
+			)}
+			{fail && (
+				<p className="contact__messageunsent">
+					Le message n'a pas été envoyé. Essayer à nouveau plus tard ou
+					contactez moi à l'adresse suivante:
+					<br />
+					<a href="mailto:contact.robinlepoutre@gmail.com">
+						contact.robinlepoutre@gmail.com
+					</a>
+				</p>
 			)}
 		</div>
 	);

@@ -45,9 +45,11 @@
 #appointment .price__details {
 	margin: 2rem auto;
 }
-/* .appointment__price p {
-	margin: 1rem 2rem;
-} */
+@media (max-width: 767px) {
+	#appointment {
+		margin: 3rem 0;
+	}
+}
 @media (min-width: 768px) {
 	#appointment {
 		/* background-image: url("../images/time.jpg"); */

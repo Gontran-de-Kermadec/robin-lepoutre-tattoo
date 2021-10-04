@@ -41,16 +41,19 @@
 /* .steps li {
 	margin: 1rem 0;
 } */
-.single__step,
+.single__step {
+	margin: 1rem 0;
+}
 .single__step p {
 	margin: 1rem auto;
 }
 .single__step ul {
 	text-align: left;
-	margin-left: 2rem;
+	margin: 1rem 0;
 }
 .steps__cancel {
 	color: #a30500;
+	margin-top: 1rem;
 }
 /* .step__bloc--position {
 	position: absolute;
@@ -89,12 +92,15 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-40%, -50%);
 	font-family: "Philosopher", sans-serif;
 }
 /*}*/
 
 @media (max-width: 767px) {
+	.steps .frise {
+		border-bottom: transparent;
+	}
 	.frise__arrow {
 		position: absolute;
 		height: 0;
@@ -114,6 +120,9 @@
 	}
 	.single__step {
 		margin: 1rem auto;
+	}
+	.frise__text p {
+		transform: translate(-50%, -20%);
 	}
 }
 @media (min-width: 768px) {
@@ -141,6 +150,9 @@
 		display: flex;
 		justify-content: space-between;
 	}
+	.step__bloc--flex > div {
+		width: 50%;
+	}
 	/* .step__bloc:nth-child(3) .single__step {
 		width: 49vw;
 	} */
@@ -153,6 +165,10 @@
 	}
 	.single__step--flex li p {
 		margin: 0.5rem 1.5rem;
+	}
+	.single__step ul {
+		text-align: left;
+		margin: 1rem 0 0 2rem;
 	}
 }
 @media (min-width: 1024px) {

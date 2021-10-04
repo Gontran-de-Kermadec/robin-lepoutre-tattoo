@@ -41,14 +41,30 @@ form #send {
 	color: #000;
 	/* border: solid; */
 }
-.contact__messagesent {
-	padding: 0.5rem;
-	/* border: solid #000; */
-	border-radius: 1rem;
+.contact__messagesent,
+.contact__messageunsent {
 	width: 80vw;
 	margin: 0.5rem auto;
-	color: white;
-	background: green;
+}
+.contact__invalid,
+.contact__messageunsent,
+.contact__messagesent {
+	color: #fff;
+	border-radius: 0.2rem;
+	padding: 0.5rem;
+}
+.contact__messageunsent,
+.contact__invalid {
+	background: #b31919;
+}
+.contact__messagesent {
+	background: #034f22;
+}
+.contact__messageunsent a {
+	color: #fff;
+}
+#send {
+	cursor: pointer;
 }
 @media (min-width: 425px) {
 	.contact__location p {
