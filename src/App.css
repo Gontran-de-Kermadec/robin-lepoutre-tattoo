@@ -4,27 +4,28 @@
 .App {
 	text-align: center;
 }
-h1 {
+/* h1 {
 	font-size: 2.5rem;
 	margin: 2rem auto;
 	font-family: "Philosopher", sans-serif;
-}
-h2 {
+} */
+/* h2 {
 	font-size: 1.5rem;
 	font-family: "Philosopher", sans-serif;
-}
+} */
 .h2--title {
 	font-size: 1.5rem;
 	font-family: "Philosopher", sans-serif;
+}
+.h3--title {
+	font-size: 1.15rem;
+	font-weight: bold;
+	color: #6a2702;
 }
 p,
 li {
 	font-size: 0.9rem;
 }
-/* .about__title {
-	font-family: "Philosopher", sans-serif;
-	font-size: 1.5rem;
-} */
 
 @media (min-width: 768px) {
 	.section__separate {
@@ -34,9 +35,6 @@ li {
 	.h2--title {
 		font-size: 2rem;
 	}
-	/* h2 {
-		margin-bottom: 2rem;
-	} */
 }
 
 @media (min-width: 1024px) {

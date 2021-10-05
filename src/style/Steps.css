@@ -5,42 +5,27 @@
 	width: 60vw;
 	margin: 1rem auto;
 }
-
-.single__step h3 {
-	color: #6a2702;
-}
-
-.step__bloc {
-	/* height: 100vh; */
+.frise {
 	position: relative;
+	border: solid 1px;
+	background-color: #ede9e8;
 }
-/* .frise__container {
-	display: none;
-} */
-/* .steps__container {
-	margin: 1rem;
-} */
-/* .frise__container {
+.frise__text {
+	height: 6rem;
+}
+.frise__text p {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
-} */
+	transform: translate(-40%, -50%);
+	font-family: "Philosopher", sans-serif;
+}
 .frise__arrow {
 	position: absolute;
 	height: 0;
 	width: 0;
 	z-index: 500;
-	/* border-right: 30vw solid transparent;
-	border-top: 20px solid black;
-	border-left: 30vw solid transparent;
-	bottom: -22px;
-	left: 50%;
-	transform: translateX(-50%); */
 }
-/* .steps li {
-	margin: 1rem 0;
-} */
 .single__step {
 	margin: 1rem 0;
 }
@@ -55,67 +40,25 @@
 	color: #a30500;
 	margin-top: 1rem;
 }
-/* .step__bloc--position {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-} */
-/* @media (max-width: 649px) {
-	#step__bloc--smallscreen {
-		height: initial;
-	}
-} */
-.steps .frise {
-	position: relative;
-	border: solid 1px;
-	background-color: #ede9e8;
-}
-/* .arrow__inner {
-	background-color: #ede9e8;
-} */
-/* .frise {
-	width: 50vw;
-} */
-/* .frise:nth-child(1) {
-	border-top-left-radius: 1rem;
-	border-top-right-radius: 1rem;
-}
-.frise:nth-last-child(-n + 1) {
-	border-bottom-left-radius: 1rem;
-	border-bottom-right-radius: 1rem;
-} */
-
-.frise__text {
-	height: 6rem;
-}
-.frise__text p {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-40%, -50%);
-	font-family: "Philosopher", sans-serif;
-}
-/*}*/
 
 @media (max-width: 767px) {
-	.steps .frise {
+	.frise {
 		border-left: solid 1px;
 		border-right: solid 1px;
 	}
-	.steps .frise:nth-child(1) {
+	.frise:nth-child(1) {
 		border-top: solid 1px;
 	}
-	.steps .frise:nth-last-child(-n + 1) {
+	.frise:nth-last-child(-n + 1) {
 		border-bottom: solid 1px;
 	}
-
 	.frise__arrow {
 		position: absolute;
 		height: 0;
 		width: 0;
 		z-index: 500;
 		border-right: 30vw solid transparent;
-		border-top: 10px solid black;
+		border-top: 10px solid #000;
 		border-left: 30vw solid transparent;
 		bottom: -12px;
 		left: 50%;
@@ -126,11 +69,11 @@
 		right: 0.1rem;
 		bottom: 0.1rem;
 	}
-	.single__step {
-		margin: 1rem auto;
-	}
 	.frise__text p {
 		transform: translate(-50%, -20%);
+	}
+	.single__step {
+		margin: 1rem auto;
 	}
 }
 @media (min-width: 768px) {
@@ -161,9 +104,6 @@
 	.step__bloc--flex > div {
 		width: 50%;
 	}
-	/* .step__bloc:nth-child(3) .single__step {
-		width: 49vw;
-	} */
 	.single__step--flex {
 		display: flex;
 		text-align: left;
