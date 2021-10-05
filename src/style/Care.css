@@ -15,29 +15,13 @@
 	text-align: left;
 }
 .care .products__dontuse ul {
+	-webkit-columns: 2;
+	-moz-columns: 2;
 	columns: 2;
 }
 .care .products__dontuse li {
 	margin: 0;
 }
-/* .care__pretattoo,
-.care__posttattoo,
-.care__products {
-	position: relative;
-} */
-/* .pretattoo__text,
-.posttattoo__text,
-.products__text {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	width: 100%;
-} */
-/* .pretattoo__text ul,
-.posttattoo__text ul,
-.products__text ul {
-	text-align: left;
-} */
 .care__title {
 	margin-bottom: 2rem;
 	padding: 2rem 0;
@@ -57,54 +41,21 @@
 	color: #000;
 	margin: 0 0.5rem;
 }
-/* .products__dontuse {
-	margin: 0 2rem;
-} */
 .products__dontuse li {
 	margin: 0 1rem;
 }
-/* @media (max-width: 768px) {
-	
-} */
 @media (min-width: 425px) {
 	.care__products {
 		margin: 2rem;
 	}
-}
-@media (min-width: 768px) {
-	/* .care__tattoo {
-		height: 100vh;
-	} */
-	/* .care__preposttattoo {
-		display: flex;
-	}
-	.care__pretattoo,
-	.care__posttattoo {
-		margin: 1rem;
-		width: 50rem;
-	} */
-	/* .care__products {
-		position: relative;
-		height: 100vh;
-		
-	} */
-	/* .care__products > p {
-		transform: translateY(8rem);
-	}
-	.care__products ul:nth-child(2) {
-		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
-	} */
-	/* .products__dontuse {
-		columns: 2;
-	} */
 }
 @media (min-width: 1024px) {
 	.care {
 		padding-bottom: 5rem;
 	}
 	.care__global {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
 		margin: 0 4rem;
 	}
@@ -136,33 +87,21 @@
 	.care .products__text li {
 		font-size: 0.8rem;
 	}
+	.care .products__text .h3--title {
+		font-size: 1.15rem;
+	}
 	.care .products__text li {
 		margin: 0;
 	}
 	.care .products__text h3 {
 		margin-bottom: 0.5rem;
-		/* position: absolute;
-		right: 3rem;
-		bottom: 0;
-		font-size: 1.3rem;
-		font-family: "Philosopher", sans-serif; */
 	}
-	/* .care__title {
-		margin-bottom: 2rem;
-		padding: 2rem 0;
-		background-color: #1e0c08;
-		color: #fff;
-	} */
 	.care .products__dontuse {
 		margin-top: 0.5rem;
 	}
 	.care .products__dontuse li {
 		margin: 0 1rem;
 	}
-	/* .care__products--danger {
-		color: #fff;
-		text-decoration: underline #a30500;
-	} */
 }
 @media (min-width: 1200px) {
 	.care__products {

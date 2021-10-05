@@ -3,7 +3,6 @@ import about from "../images/about.jpg";
 const About = () => {
 	return (
 		<div className="about section" id="about">
-			{/* <h2 className="about__title"></h2> */}
 			<p className="h2--title">À PROPOS</p>
 			<div className="about__flex">
 				<div className="text__container">

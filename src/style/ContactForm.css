@@ -1,6 +1,3 @@
-/* #contact {
-	padding: 2rem 0 3rem 0;
-} */
 #contact {
 	height: 100vh;
 	position: relative;
@@ -19,6 +16,22 @@ textarea {
 	border: solid 1px;
 	padding: 5px;
 }
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
 input::placeholder,
 textarea::placeholder {
 	font-family: Georgia, "Times New Roman", Times, serif;
@@ -36,10 +49,8 @@ form textarea {
 	height: 6.9rem;
 }
 form #send {
-	/* width: 60vw; */
 	background: lightgray;
 	color: #000;
-	/* border: solid; */
 }
 .contact__messagesent,
 .contact__messageunsent {
@@ -81,12 +92,21 @@ form #send {
 }
 @media (min-width: 1024px) {
 	.contact__flex {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: reverse;
+		-ms-flex-direction: row-reverse;
 		flex-direction: row-reverse;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
 		justify-content: center;
 		position: absolute;
 		width: 100%;
 		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
 		transform: translateY(-50%);
 		margin: 0;
 	}
@@ -95,18 +115,17 @@ form #send {
 		width: 40%;
 	}
 	.form__fullname {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
 		justify-content: space-between;
 	}
 	.form__fullname .control {
 		width: 49%;
 		margin: initial;
 	}
-	/* .contact__location iframe {
-		width: 100%;
-		height: 20rem;
-		border: none;
-	} */
 	.contact__location {
 		margin-left: 1rem;
 	}

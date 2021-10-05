@@ -1,13 +1,7 @@
 .about .text__container p {
 	margin: 2rem 0;
 }
-
 @media (max-width: 767px) {
-	/* .about .text__container {
-		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
-	} */
 	.about .text__container {
 		margin: 0 2rem;
 	}
@@ -17,6 +11,8 @@
 }
 @media (min-width: 768px) {
 	.about__flex {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
 	}
 	.about__flex {
@@ -32,6 +28,8 @@
 		width: 40%;
 	}
 	.about .text__container {
+		-ms-flex-item-align: center;
+		-ms-grid-row-align: center;
 		align-self: center;
 		text-align: left;
 	}
@@ -42,6 +40,7 @@
 	.about .img__container img {
 		height: 100%;
 		width: 100%;
+		-o-object-fit: cover;
 		object-fit: cover;
 	}
 }
@@ -53,6 +52,8 @@
 	.about__flex {
 		position: absolute;
 		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
 		transform: translateY(-50%);
 		margin: 0 4rem;
 	}

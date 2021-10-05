@@ -8,7 +8,6 @@ const Appointment = () => {
 				<img src={img} alt="" />
 			</div>
 			<div className="appointment--opacity">
-				{/* <h2>COMMENT OBTENIR UN RENDEZ VOUS ?</h2> */}
 				<div className="appointment__time">
 					<p className="appointment_title h2--title">HORAIRES</p>
 					<div className="appointment__position">
