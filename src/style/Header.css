@@ -21,7 +21,11 @@ header nav li {
 header nav a {
 	color: #fff;
 }
-
+@media (max-width: 424px) {
+	header ul li {
+		padding: 0.4rem 0;
+	}
+}
 @media (min-width: 425px) {
 	header nav {
 		padding: 1rem 0;
