@@ -7,7 +7,7 @@ header {
 	position: fixed;
 	top: 0;
 	background-color: rgba(4, 3, 3, 0.9);
-	padding: 1rem 0;
+	padding-top: 1rem;
 	z-index: 800;
 }
 .header__section img {
@@ -68,14 +68,37 @@ header nav a {
 	}
 }
 @media (min-width: 425px) {
+	header {
+		transition: transform 0.5s;
+	}
+	header.nav__hidden {
+		transform: translateY(-100%);
+		transition: transform 0.5s;
+	}
 	header nav {
 		padding: 1rem 0;
 	}
-	.header__close--menu {
+	.header__close--menu,
+	.header__btn {
 		display: none;
+	}
+	header p {
+		color: white;
+		width: 20vw;
+		background: red;
+		margin: 0 auto;
+		transform: translateY(100%);
 	}
 	header ul {
 		display: flex;
 		justify-content: space-around;
+	}
+	header .menu__displayed {
+		/* display: block; */
+		opacity: 1;
+	}
+	header .menu__hidden {
+		/* display: none; */
+		opacity: 0;
 	}
 }
