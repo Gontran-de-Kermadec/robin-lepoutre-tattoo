@@ -83,22 +83,22 @@ header nav a {
 		display: none;
 	}
 	header p {
-		color: white;
+		color: #000;
 		width: 20vw;
-		background: red;
+		background: #ede9e8;
 		margin: 0 auto;
 		transform: translateY(100%);
+		border-radius: 0 0 25px 25px;
+		padding: 0.2rem 0;
 	}
 	header ul {
 		display: flex;
 		justify-content: space-around;
 	}
 	header .menu__displayed {
-		/* display: block; */
 		opacity: 1;
 	}
 	header .menu__hidden {
-		/* display: none; */
 		opacity: 0;
 	}
 }

@@ -3,7 +3,7 @@ import "../style/Landing.css";
 const LandingPage = () => {
 	return (
 		<div className="landing">
-			<p>Robin LEPOUTRE</p>
+			<h1>Robin LEPOUTRE</h1>
 			<section className="button__container">
 				<button>
 					<a

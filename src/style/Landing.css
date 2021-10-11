@@ -4,7 +4,8 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
-.landing p {
+.landing h1 {
+	font-weight: initial;
 	margin: 4rem auto;
 	font-size: 3rem;
 }

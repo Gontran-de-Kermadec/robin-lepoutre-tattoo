@@ -48,28 +48,27 @@ const Steps = () => {
 						<p className="h3--title">
 							Étape 1: La Présentation et description du projet
 						</p>
-						<p>Avez-vous un projet ?</p>
+						<p className="single__step--bold">- Si vous avez un projet :</p>
 						<p>
-							- Si oui, communiquez-le moi par mail avec le plus de détails
-							possibles (description, style, photo, emplacement, taille, ce que
-							vous aimez, ce que vous n'aimez pas)
+							communiquez-le moi par mail avec le plus de détails possibles
+							(description, style, photo, emplacement, taille, ce que vous
+							aimez, ce que vous n'aimez pas...)
+						</p>
+						<p className="single__step--bold">
+							- Si votre projet n'est pas encore clairement défini :
 						</p>
 						<p>
-							- Vous n'avez pas de projet clairement défini, pas de soucis.
-							<br />
-							Robin vous accompagne étape par étape.
-							<br />
-							Indiquez ce que vous recherchez par mail.
+							Robin vous accompagnera étape par étape pour vous donner entière
+							satisfaction. Indiquez-lui vos souhaits par email.
 						</p>
 						<p>
-							Robin répondra positivement ou négativement à votre projet en
-							fonction de son savoir-faire et de ses domaines de prédilections.
+							Privilégiant la qualité de son travail, Robin sélectionnera les
+							projets en adéquation avec ses compétences et ne pourra répondre à
+							toutes les demandes, notamment les projets “cover”.
 						</p>
 						<p>
-							<i>
-								Il ne pourra pas répondre à toutes les demandes et notamment les
-								projets "cover".
-							</i>
+							L’e-mail est le seul moyen de prendre contact avec Robin et
+							d’échanger sur vos projets.
 						</p>
 					</div>
 				</div>
@@ -96,16 +95,17 @@ const Steps = () => {
 						<p>
 							Pour des réalisations plus complexes, qui nécessitent une
 							recherche approfondie, une étude (séance payante) sera organisée
-							afin de définir les contours avant la réalisation du dessin.
+							afin de définir les contours avant la réalisation du devis final
+							et du dessin.
 						</p>
 						<ul>
 							<li>
-								- Proposition &amp; validation du style, de la taille, d'un
-								emplacement...
+								- Proposition &amp; validation du style, de la taille, de
+								l'emplacement de votre futur tatouage...
 							</li>
 							<li>
 								- Rencontre intermédiaire et finale en fonction de l’importance
-								du projet afin de valider tous les paramètres avant la
+								de votre projet afin de valider tous les paramètres avant la
 								réalisation du dessin.
 							</li>
 						</ul>

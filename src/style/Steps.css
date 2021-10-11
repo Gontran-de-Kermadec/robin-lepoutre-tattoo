@@ -4,6 +4,9 @@
 .steps .h3--title {
 	color: #6a2702;
 }
+.single__step--bold {
+	font-weight: bold;
+}
 .frise__container {
 	width: 60vw;
 	margin: 1rem auto;

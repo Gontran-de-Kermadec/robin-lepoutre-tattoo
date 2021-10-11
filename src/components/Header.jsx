@@ -34,9 +34,9 @@ const Header = () => {
 	});
 	window.addEventListener("mousemove", (e) => {
 		let client = e.clientY;
-		if (window.scrollY > 200 && client < 50) {
+		if (window.scrollY > 200 && client < 100) {
 			setHideNav("");
-		} else if (window.scrollY > 200 && client > 50) {
+		} else if (window.scrollY > 200 && client > 100) {
 			setHideNav("nav__hidden");
 		}
 		//console.log("Y: " + client);
@@ -50,7 +50,7 @@ const Header = () => {
 		<div className="section header__section ">
 			<img src={logo} alt="Logo Robin Lepoutre" />
 			<div className={hideButton + " header__btn"}>
-				<button onClick={displayMenu}>Menu</button>
+				<button onClick={displayMenu}>MENU</button>
 			</div>
 			<header className={display + " " + hideNav}>
 				<nav>
@@ -81,7 +81,7 @@ const Header = () => {
 						</li>
 					</ul>
 				</nav>
-				<p className={showMenu}>Menu</p>
+				<p className={showMenu}>MENU</p>
 			</header>
 		</div>
 	);
