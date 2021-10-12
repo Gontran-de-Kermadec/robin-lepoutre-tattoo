@@ -50,7 +50,7 @@ const Steps = () => {
 						</p>
 						<p className="single__step--bold">- Si vous avez un projet :</p>
 						<p>
-							communiquez-le moi par mail avec le plus de détails possibles
+							communiquez-le à Robin par mail avec le plus de détails possibles
 							(description, style, photo, emplacement, taille, ce que vous
 							aimez, ce que vous n'aimez pas...)
 						</p>
