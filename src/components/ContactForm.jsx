@@ -8,33 +8,16 @@ const ContactForm = () => {
 	const [success, setSuccess] = useState(false);
 	const [fail, setFail] = useState(false);
 	const [isInvalid, setIsInvalid] = useState(false);
-
-	// let error = {};
-	// let wrong = [];
 	const handleInput = (e) => {
 		const value = reg.test(e.currentTarget.value);
 		if (value) {
-			console.log(e.currentTarget.value);
-			//error.push(e.currentTarget);
-			// error[e.currentTarget.name] = e.currentTarget;
-			// wrong.push(e.currentTarget);
 			setIsInvalid(true);
 		} else {
-			//	error = 0;
-			//console.log(error);
 			setIsInvalid(false);
 		}
 	};
-	// const checkErrors = (errors) => {
-	// 	console.log(errors);
-	// 	console.log(reg.test(errors[0].value));
-	// 	if (reg.test(errors[0].value) === false) {
-	// 		console.log("je retite cet erreur");
-	// 	}
-	// };
 	const sendEmail = (e) => {
 		e.preventDefault();
-		//checkErrors(error);
 		if (!isInvalid) {
 			emailjs
 				.sendForm(
@@ -55,11 +38,7 @@ const ContactForm = () => {
 					}
 				);
 			e.target.reset();
-			//setSuccess(!success);
 		}
-		// else {
-		// 	setFail(true);
-		// }
 	};
 	useEffect(() => {
 		if (success) {

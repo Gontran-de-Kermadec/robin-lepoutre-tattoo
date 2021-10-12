@@ -2,6 +2,7 @@ import About from "./About";
 import Appointment from "./Appointment";
 import Care from "./Care";
 import ContactForm from "./ContactForm";
+import Footer from "./Footer";
 import Gallery from "./Gallery";
 import Header from "./Header";
 import Infos from "./Infos";
@@ -26,6 +27,7 @@ const Homepage = () => {
 				<Appointment />
 				<div className="section__separate"></div>
 				<ContactForm />
+				<Footer />
 			</main>
 		</div>
 	);

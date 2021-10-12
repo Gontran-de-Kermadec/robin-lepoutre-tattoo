@@ -1,5 +1,5 @@
 #contact {
-	height: 100vh;
+	/* height: 100vh; */
 	position: relative;
 	margin: 0 2rem;
 }
@@ -91,6 +91,9 @@ form #send {
 	}
 }
 @media (min-width: 1024px) {
+	#contact {
+		height: 100vh;
+	}
 	.contact__flex {
 		display: -webkit-box;
 		display: -ms-flexbox;
