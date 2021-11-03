@@ -1,56 +1,64 @@
 import "../style/ContactForm.css";
-import React, { useRef, useState, useEffect } from "react";
-import emailjs from "emailjs-com";
+// import React, { useRef, useState, useEffect } from "react";
+// import emailjs from "emailjs-com";
 
 const ContactForm = () => {
-	const reg = /[@#$%^&*):(<>+=`_]+/gi;
-	const form = useRef();
-	const [success, setSuccess] = useState(false);
-	const [fail, setFail] = useState(false);
-	const [isInvalid, setIsInvalid] = useState(false);
-	const handleInput = (e) => {
-		const value = reg.test(e.currentTarget.value);
-		if (value) {
-			setIsInvalid(true);
-		} else {
-			setIsInvalid(false);
-		}
-	};
-	const sendEmail = (e) => {
-		e.preventDefault();
-		if (!isInvalid) {
-			emailjs
-				.sendForm(
-					// "service_ff0nc3o",
-					"service_y8i6wok",
-					"template_emnd0iq",
-					form.current,
-					"user_Ucen0nIkMHGKzdR7E0veU"
-				)
-				.then(
-					(result) => {
-						console.log(result.text);
-						setSuccess(!success);
-					},
-					(error) => {
-						console.log(error.text);
-						setFail(true);
-					}
-				);
-			e.target.reset();
-		}
-	};
-	useEffect(() => {
-		if (success) {
-			setTimeout(() => {
-				setSuccess(!success);
-			}, 15000);
-		}
-	}, [success]);
+	// const reg = /[@#$%^&*):(<>+=`_]+/gi;
+	// const form = useRef();
+	// const [success, setSuccess] = useState(false);
+	// const [fail, setFail] = useState(false);
+	// const [isInvalid, setIsInvalid] = useState(false);
+	// const handleInput = (e) => {
+	// 	const value = reg.test(e.currentTarget.value);
+	// 	if (value) {
+	// 		setIsInvalid(true);
+	// 	} else {
+	// 		setIsInvalid(false);
+	// 	}
+	// };
+	// const sendEmail = (e) => {
+	// 	e.preventDefault();
+	// 	if (!isInvalid) {
+	// 		emailjs
+	// 			.sendForm(
+	// 				// "service_ff0nc3o",
+	// 				"service_y8i6wok",
+	// 				"template_emnd0iq",
+	// 				form.current,
+	// 				"user_Ucen0nIkMHGKzdR7E0veU"
+	// 			)
+	// 			.then(
+	// 				(result) => {
+	// 					console.log(result.text);
+	// 					setSuccess(!success);
+	// 				},
+	// 				(error) => {
+	// 					console.log(error.text);
+	// 					setFail(true);
+	// 				}
+	// 			);
+	// 		e.target.reset();
+	// 	}
+	// };
+	// useEffect(() => {
+	// 	if (success) {
+	// 		setTimeout(() => {
+	// 			setSuccess(!success);
+	// 		}, 15000);
+	// 	}
+	// }, [success]);
 	return (
 		<div className="section" id="contact">
 			<p className="h2--title">CONTACT</p>
 			<div className="contact__flex">
+				<div className="contact__email">
+					<p>Envoyez moi un mail à l'adresse suivante:</p>
+					<p>
+						<a href="mailto:contact.robinlepoutre@gmail.com">
+							contact.robinlepoutre@gmail.com
+						</a>
+					</p>
+				</div>
 				<div className="contact__location">
 					<div className="contact__position">
 						<p>2 rue Thomas Edison</p>
@@ -68,7 +76,8 @@ const ContactForm = () => {
 						</div>
 					</div>
 				</div>
-				<form ref={form} onSubmit={sendEmail}>
+
+				{/* <form ref={form} onSubmit={sendEmail}>
 					<div className="form__fullname">
 						<div className="control">
 							<input
@@ -129,9 +138,9 @@ const ContactForm = () => {
 							Pas de caractères spéciaux comme (@,{"<"}, =, %...) !!
 						</p>
 					)}
-				</form>
+				</form> */}
 			</div>
-			{success && (
+			{/* {success && (
 				<p className="contact__messagesent">Votre message a bien été envoyé</p>
 			)}
 			{fail && (
@@ -143,7 +152,7 @@ const ContactForm = () => {
 						contact.robinlepoutre@gmail.com
 					</a>
 				</p>
-			)}
+			)} */}
 		</div>
 	);
 };

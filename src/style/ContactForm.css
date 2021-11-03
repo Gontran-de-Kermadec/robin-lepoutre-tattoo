@@ -3,6 +3,15 @@
 	position: relative;
 	margin: 0 2rem;
 }
+.contact__email {
+	margin: 2rem auto;
+}
+.contact__email p:nth-child(1) {
+	font-size: 1.1rem;
+}
+.contact__email p:nth-child(2) {
+	font-weight: bold;
+}
 .contact__location iframe {
 	height: 20rem;
 	width: 100%;
@@ -91,13 +100,18 @@ form #send {
 	}
 }
 @media (min-width: 1024px) {
+	/*style temporaire*/
+	.contact__email p:nth-child(1) {
+		font-size: 1.5rem;
+	}
+	/*fin style temporaire*/
 	#contact {
 		height: 100vh;
 	}
 	.contact__flex {
-		display: -webkit-box;
+		/* display: -webkit-box;
 		display: -ms-flexbox;
-		display: flex;
+		display: flex; */
 		-webkit-box-orient: horizontal;
 		-webkit-box-direction: reverse;
 		-ms-flex-direction: row-reverse;
@@ -115,7 +129,8 @@ form #send {
 	}
 	form,
 	.contact__location {
-		width: 40%;
+		/*width: 40%;*/
+		width: 60%;
 	}
 	.form__fullname {
 		display: -webkit-box;
@@ -130,7 +145,8 @@ form #send {
 		margin: initial;
 	}
 	.contact__location {
-		margin-left: 1rem;
+		/*margin-left: 1rem;*/
+		margin: 1rem auto;
 	}
 	form {
 		margin-right: 1rem;
