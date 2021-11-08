@@ -5,9 +5,8 @@ import firebase from "firebase/compat/app";
 import "firebase/compat/functions";
 // import emailjs from "emailjs-com";
 
-firebase.initializeApp(firebaseConfig);
-
 //initialize Cloud Functions through Firebase
+firebase.initializeApp(firebaseConfig);
 firebase.functions();
 
 const ContactForm = () => {
@@ -17,8 +16,7 @@ const ContactForm = () => {
 	const [fail, setFail] = useState(false);
 	const [isInvalid, setIsInvalid] = useState(false);
 	const [dataUrl, setDataUrl] = useState([]);
-
-	//firebase
+	//firebase callable function
 	const sendEmail = firebase.functions().httpsCallable("sendEmail");
 	const handleInput = (e) => {
 		const value = reg.test(e.currentTarget.value);
@@ -53,6 +51,7 @@ const ContactForm = () => {
 					console.log(error);
 					setFail(true);
 				});
+			setDataUrl([]);
 			e.target.reset();
 		}
 		// if (!isInvalid) {
@@ -194,7 +193,6 @@ const ContactForm = () => {
 							/>
 						</div>
 						<div className="control flex__input">
-							{/* <label htmlFor="attachment">Ajoutez jusqu'à 5 images</label> */}
 							<input
 								id="attachment"
 								type="file"
@@ -230,7 +228,6 @@ const ContactForm = () => {
 					</p>
 				)}
 			</div>
-
 			{fail && (
 				<p className="contact__messageunsent">
 					Le message n'a pas été envoyé. Essayer à nouveau plus tard ou
