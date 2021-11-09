@@ -10,7 +10,7 @@ firebase.initializeApp(firebaseConfig);
 firebase.functions();
 
 const ContactForm = () => {
-	const reg = /[@#$%^&*):(<>+=`_]+/gi;
+	const reg = /[@#$%^&*;):(<>+=`_]+/gi;
 	const form = useRef();
 	const [success, setSuccess] = useState(false);
 	const [fail, setFail] = useState(false);
