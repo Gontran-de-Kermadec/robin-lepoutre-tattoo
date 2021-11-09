@@ -8,7 +8,7 @@ import "firebase/compat/functions";
 //initialize Cloud Functions through Firebase
 firebase.initializeApp(firebaseConfig);
 firebase.functions();
-
+console.log(firebaseConfig);
 const ContactForm = () => {
 	const reg = /[@#$%^&*;):(<>+=`_]+/gi;
 	const form = useRef();
@@ -28,7 +28,6 @@ const ContactForm = () => {
 	};
 	const sendForm = (e) => {
 		e.preventDefault();
-		console.log(e.currentTarget.user_name.value);
 		let attachments = dataUrl.map((img) => {
 			return {
 				path: img,
@@ -85,7 +84,6 @@ const ContactForm = () => {
 			e.target.value = "";
 		} else {
 			Array.from(files).forEach((file) => {
-				console.log(file);
 				const reader = new FileReader();
 				reader.addEventListener("load", function () {
 					//convert image file to base64 string
@@ -101,7 +99,6 @@ const ContactForm = () => {
 	};
 	const clearImg = (e) => {
 		e.preventDefault();
-		console.log(e.target.parentElement.children[0].value);
 		e.target.parentElement.children[0].value = "";
 		setDataUrl([]);
 	};
