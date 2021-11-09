@@ -2,7 +2,8 @@ const functions = require("firebase-functions");
 const nodemailer = require("nodemailer");
 const { google } = require("googleapis");
 //when this cloud function is already deployed, change the origin to 'https://your-deployed-app-url
-const cors = require("cors")({ origin: true });
+//const cors = require("cors")({ origin: true });
+const cors = require("cors")({ origin: "https://www.robinlepoutre.com/" });
 //get gmail api infos
 
 const clientId = functions.config().api_config.client_id;
