@@ -101,4 +101,18 @@ header nav a {
 	header .menu__hidden {
 		opacity: 0;
 	}
+	.header__section--svg {
+		position: absolute;
+		bottom: 0;
+		height: 4rem;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.header__section--svg svg {
+		display: block;
+		width: 1.5rem;
+	}
+	.header__section--svg svg:nth-child(1) {
+		transform: translateY(1rem);
+	}
 }

@@ -114,14 +114,6 @@ const ContactForm = () => {
 			<p className="h2--title">CONTACT</p>
 			<div className="contact__form">
 				<div className="contact__flex">
-					{/* <div className="contact__email">
-					<p>Envoyez moi un mail à l'adresse suivante:</p>
-					<p>
-						<a href="mailto:contact.robinlepoutre@gmail.com">
-							contact.robinlepoutre@gmail.com
-						</a>
-					</p>
-				</div> */}
 					<div className="contact__location">
 						<div className="contact__position">
 							<p>2 rue Thomas Edison</p>

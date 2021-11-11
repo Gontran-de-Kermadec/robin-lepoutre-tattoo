@@ -47,7 +47,18 @@
 }
 @media (min-width: 768px) {
 	#appointment {
+		height: 100vh;
 		font-size: 1.5rem;
+	}
+	.appointment--opacity {
+		width: 80vw;
+		transform: translateY(2rem);
+		margin: 0 auto;
+		background-color: rgba(4, 3, 3, 0.8);
+	}
+	.appointment__location iframe {
+		width: 60vw;
+		height: 400px;
 	}
 	.time__details,
 	.price__details {
@@ -61,9 +72,9 @@
 		line-height: 5rem;
 	}
 }
-@media (min-width: 768px) {
-	.appointment__location iframe {
+@media (min-width: 1024px) {
+	.appointment--opacity {
 		width: 60vw;
-		height: 400px;
+		transform: translateY(4rem);
 	}
 }
