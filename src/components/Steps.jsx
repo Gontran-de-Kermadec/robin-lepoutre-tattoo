@@ -92,7 +92,7 @@ const Steps = () => {
 						<p className="h3--title">
 							Étape 3: L’Étude approfondie du projet (optionnelle)
 						</p>
-						<p>
+						<p className="steps--margin">
 							Pour des réalisations plus complexes, qui nécessitent une
 							recherche approfondie, une étude (séance payante) sera organisée
 							afin de définir les contours avant la réalisation du devis final
@@ -125,7 +125,9 @@ const Steps = () => {
 				</div>
 				<div className="single__step">
 					<p className="h3--title">Étape 5: Le Tatouage</p>
-					<p>Ne bougez pas ! Robin réalise son œuvre sur vous !</p>
+					<p className="steps--margin">
+						Ne bougez pas ! Robin réalise son œuvre sur vous !
+					</p>
 				</div>
 			</div>
 			<p className="steps__cancel">

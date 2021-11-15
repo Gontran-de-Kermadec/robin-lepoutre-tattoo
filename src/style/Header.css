@@ -107,12 +107,36 @@ header nav a {
 		height: 4rem;
 		left: 50%;
 		transform: translateX(-50%);
+		transition: opacity 0.5s;
+	}
+	.svg__hidden {
+		opacity: 0;
+		transition: opacity 0.5s;
 	}
 	.header__section--svg svg {
 		display: block;
 		width: 1.5rem;
+		animation: moveDown 0.8s ease infinite alternate;
 	}
 	.header__section--svg svg:nth-child(1) {
-		transform: translateY(1rem);
+		transform: translateY(0.8rem);
+		animation: moveDownBis 0.8s infinite alternate;
+	}
+}
+
+@keyframes moveDown {
+	0% {
+		transform: translateY(0.1rem);
+	}
+	100% {
+		transform: translateY(0.6rem);
+	}
+}
+@keyframes moveDownBis {
+	0% {
+		transform: translateY(0.8rem);
+	}
+	100% {
+		transform: translateY(1.3rem);
 	}
 }

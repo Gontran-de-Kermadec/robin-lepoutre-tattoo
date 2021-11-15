@@ -122,7 +122,10 @@
 	}
 	.single__step ul {
 		text-align: left;
-		margin: 1rem 0 0 2rem;
+		margin: 1rem 0 0 1rem;
+	}
+	.single__step .steps--margin {
+		margin: 1rem 0 0 1rem;
 	}
 }
 @media (min-width: 1024px) {

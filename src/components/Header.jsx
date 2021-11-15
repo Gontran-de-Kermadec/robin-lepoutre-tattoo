@@ -7,6 +7,7 @@ const Header = () => {
 	const [hideButton, setHideButton] = useState("");
 	const [hideNav, setHideNav] = useState("");
 	const [showMenu, setShowMenu] = useState("menu__hidden");
+	const [hideArrow, setHideArrow] = useState("");
 	const displayMenu = () => {
 		if (display === "displayed") {
 			setDisplay("");
@@ -20,17 +21,13 @@ const Header = () => {
 		if (window.scrollY > 150) {
 			setHideNav("nav__hidden");
 			setShowMenu("menu__displayed");
+
+			setHideArrow("svg__hidden");
 		} else {
 			setHideNav("");
 			setShowMenu("menu__hidden");
+			setHideArrow("");
 		}
-		// if(offset > 150) {
-		//   header.style.transform = 'translateY(-70%)';
-		//   para.style.display = 'block';
-		// } else {
-		//   header.style.transform = 'translateY(0)';
-		//   para.style.display = 'none';
-		// }
 	});
 	window.addEventListener("mousemove", (e) => {
 		let client = e.clientY;
@@ -39,12 +36,6 @@ const Header = () => {
 		} else if (window.scrollY > 200 && client > 100) {
 			setHideNav("nav__hidden");
 		}
-		//console.log("Y: " + client);
-		// if(offset > 200 && client < 50) {
-		//   header.style.transform = 'translateY(0)';
-		// } else if(offset > 200 && client > 50) {
-		//   header.style.transform = 'translateY(-70%)';
-		// }
 	});
 	return (
 		<div className="section header__section ">
@@ -83,7 +74,7 @@ const Header = () => {
 				</nav>
 				<p className={showMenu}>MENU</p>
 			</header>
-			<div className="header__section--svg">
+			<div className={"header__section--svg " + hideArrow}>
 				<svg
 					aria-hidden="true"
 					focusable="false"
