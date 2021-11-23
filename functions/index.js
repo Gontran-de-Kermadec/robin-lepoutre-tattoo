@@ -2,14 +2,14 @@ const functions = require("firebase-functions");
 const nodemailer = require("nodemailer");
 const { google } = require("googleapis");
 //when this cloud function is already deployed, change the origin to 'https://your-deployed-app-url
-//const cors = require("cors")({ origin: true });
+// const cors = require("cors")({ origin: true });
 const cors = require("cors")({ origin: "https://robinlepoutre.com" });
+// const cors = require("cors")({ origin: "*" });
 //get gmail api infos
 
 const clientId = functions.config().api_config.client_id;
 const clientSecret = functions.config().api_config.client_secret;
 const refreshToken = functions.config().api_config.refresh_token;
-
 //create new instance to authenticate
 const oauth2Client = new google.auth.OAuth2(
 	clientId,
@@ -26,11 +26,19 @@ oauth2Client.setCredentials({
 const accessToken = new Promise((resolve, reject) => {
 	oauth2Client.getAccessToken((err, token) => {
 		if (err) {
+			console.log(err);
 			reject("Failed to create access token :(");
 		}
 		resolve(token);
 	});
-});
+})
+	.then((result) => {
+		console.log(result);
+	})
+	.catch((error) => {
+		console.log(error);
+	});
+//console.log(accessToken);
 
 //create and config transporter
 let transporter = nodemailer.createTransport({
