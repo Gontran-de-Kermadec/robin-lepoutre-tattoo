@@ -3,13 +3,15 @@ const nodemailer = require("nodemailer");
 const { google } = require("googleapis");
 //when this cloud function is already deployed, change the origin to 'https://your-deployed-app-url
 // const cors = require("cors")({ origin: true });
+//const cors = require("cors")({ origin: "http://localhost:3000" });
 const cors = require("cors")({ origin: "https://robinlepoutre.com" });
 // const cors = require("cors")({ origin: "*" });
-//get gmail api infos
 
 const clientId = functions.config().api_config.client_id;
 const clientSecret = functions.config().api_config.client_secret;
 const refreshToken = functions.config().api_config.refresh_token;
+
+console.log(refreshToken);
 //create new instance to authenticate
 const oauth2Client = new google.auth.OAuth2(
 	clientId,
@@ -38,18 +40,10 @@ const accessToken = new Promise((resolve, reject) => {
 	.catch((error) => {
 		console.log(error);
 	});
-//console.log(accessToken);
 
 //create and config transporter
 let transporter = nodemailer.createTransport({
 	service: "gmail",
-	// host: "smtp.gmail.com",
-	// port: 465,
-	// secure: true, // true for 465, false for other ports
-	// auth: {
-	// 	user: "",
-	// 	pass: "",
-	// },
 	auth: {
 		type: "OAuth2",
 		user: "contact.robinlepoutre@gmail.com",

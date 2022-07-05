@@ -8,7 +8,7 @@ import "firebase/compat/functions";
 //initialize Cloud Functions through Firebase
 firebase.initializeApp(firebaseConfig);
 firebase.functions();
-console.log(firebaseConfig);
+//console.log(firebaseConfig);
 const ContactForm = () => {
 	const reg = /[@#$%^&*;):(<>+=`_]+/gi;
 	const form = useRef();
@@ -43,15 +43,19 @@ const ContactForm = () => {
 				attachments: attachments,
 			})
 				.then((result) => {
-					console.log(result);
+					//console.log(result);
 					setSuccess(!success);
+					setDataUrl([]);
+					e.target.reset();
 				})
 				.catch((error) => {
 					console.log(error);
 					setFail(true);
+					setDataUrl([]);
+					e.target.reset();
 				});
-			setDataUrl([]);
-			e.target.reset();
+			// setDataUrl([]);
+			// e.target.reset();
 		}
 		// if (!isInvalid) {
 		// 	emailjs
